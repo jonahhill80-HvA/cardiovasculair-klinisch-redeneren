@@ -3,1092 +3,236 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Zes voorspeloefeningen en twee interactieve casussen over cardiovasculair klinisch redeneren tijdens anesthesie.">
-<title>Cardiovasculair redeneren</title>
+<meta name="description" content="Interactieve standalone les cardiovasculair klinisch redeneren voor anesthesiologische zorg en technieken.">
+<title>Cardiovasculair klinisch redeneren · Bijeenkomst 4</title>
 <style>
-:root{color-scheme:light;--bg:#f4f5f0;--paper:#fff;--ink:#19392f;--muted:#53675e;--line:#d6dfd6;--accent:#22583f;--soft:#eaf1e9;--hint:#f8f1e3;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;color:var(--ink);background:var(--bg)}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;min-height:44px;padding:10px 16px;border:1px solid #b8c9bb;border-radius:9px;background:var(--paper);color:var(--ink);font-weight:600;line-height:1.35;text-align:left}button:hover:not(:disabled){background:var(--soft)}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #ad7427;outline-offset:4px}button:disabled{cursor:default;opacity:.48}a{color:var(--accent);text-underline-offset:3px}p{margin:10px 0 18px}.page{max-width:1180px;margin:auto;padding:36px 28px 20px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}h1{font-size:clamp(29px,5vw,42px);line-height:1.13;letter-spacing:-.035em;margin:12px 0}h2{font-size:25px;line-height:1.3;letter-spacing:-.025em;margin:0 0 14px}h3{font-size:19px;line-height:1.4;margin:0 0 10px}.lead{color:var(--muted);margin-bottom:24px}.modebar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}.modebar button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:30px;align-items:start}.sidebar{display:grid;gap:7px}.sidebar-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 7px}.activity-button{display:flex;gap:12px;align-items:baseline;width:100%;background:transparent;border-color:transparent;font-size:15px;font-weight:500}.activity-button[aria-current=true]{background:var(--soft);border-color:#bfcebf;font-weight:650}.activity-number{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px;min-width:18px}.activity-title{min-width:0}.lesson-header .intro{margin-bottom:12px}.context,.small{font-size:14px;color:var(--muted)}.progress{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:23px 0 12px;font-size:14px}.badge{background:var(--soft);padding:4px 9px;border-radius:5px;font-size:12px;font-weight:650}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,32px);box-shadow:0 5px 24px #15372305;min-width:0}fieldset{border:0;min-width:0;padding:0;margin:0}legend{font-size:20px;font-weight:650;line-height:1.45;padding:0;margin-bottom:12px;letter-spacing:-.01em}.options{display:grid;gap:10px;margin:20px 0}.option{display:flex;align-items:flex-start;gap:12px;padding:13px 15px;border:1px solid var(--line);border-radius:9px;cursor:pointer;line-height:1.5}.option:has(:checked){border-color:var(--accent);background:var(--soft);box-shadow:inset 0 0 0 1px var(--accent)}.option:has(:disabled){cursor:default}.option input{width:19px;height:19px;margin:3px 0 0;flex-shrink:0;accent-color:var(--accent)}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:20px}.primary{background:var(--accent);color:white;border-color:var(--accent)}.primary:hover:not(:disabled){background:#19432f}.feedback{margin-top:24px;border-left:3px solid #b48b44;padding:3px 0 3px 16px}.feedback.correct{border-color:#4b8058}.feedback p{margin:0}.feedback h3{font-size:18px;margin-bottom:6px}.explanation{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}.definitions{margin:0}.definitions dt{font-weight:650;margin-top:15px}.definitions dt:first-child{margin-top:0}.definitions dd{margin:5px 0 0}.chain{list-style:none;padding:0;margin:20px 0 0}.chain-step{display:grid;grid-template-columns:28px minmax(0,1fr);gap:13px;position:relative;padding-bottom:23px}.chain-step:not(:last-child):before{content:"";position:absolute;left:13px;top:29px;bottom:0;border-left:1px solid var(--line)}.chain-number{display:flex;align-items:center;justify-content:center;border-radius:50%;width:28px;height:28px;background:var(--soft);font-size:13px;font-weight:650}.chain-step[aria-current=step] .chain-number{background:var(--accent);color:white}.chain-label{font-weight:650;margin:0}.chain-detail{margin:6px 0 0}.navigation{display:flex;flex-wrap:wrap;gap:9px;justify-content:space-between;margin:17px 0}.notice{font-size:13px;color:var(--muted);min-height:1em}.learning{margin:22px 0;font-size:14px}.learning summary{cursor:pointer;color:var(--muted)}.learning p{margin:10px 0}.footer{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;font-size:12px;color:var(--muted)}.footer details{margin-top:10px}.footer ul{padding-left:20px}.footer a{overflow-wrap:anywhere}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}.skip{position:absolute;left:15px;top:-100px;background:white;padding:10px;z-index:10}.skip:focus{top:10px}@media(max-width:760px){.page{padding:25px 18px}.layout{grid-template-columns:minmax(0,1fr);gap:22px}.sidebar{display:flex;flex-wrap:wrap;gap:6px}.sidebar-label{width:100%}.activity-button{width:auto;flex:1 1 145px;border-color:var(--line);padding:10px 12px}.activity-number{display:none}.modebar{margin-bottom:20px}h2{font-size:23px}}@media(max-width:390px){.page{padding:20px 12px}.card{padding:18px}.actions button{width:100%}.navigation button{flex:1 1 130px}legend{font-size:19px}.activity-button{font-size:14px}}@media print{.sidebar,.modebar,.navigation,.actions,.skip,.notice{display:none}.layout{display:block}.card{box-shadow:none}.page{max-width:none;padding:0}}
+:root{--bg:#f4f5f0;--paper:#fff;--ink:#18372e;--muted:#586b62;--line:#d5ded6;--accent:#22583f;--soft:#eaf1e9;--warn:#fff7e8;--good:#edf6ef;--bad:#fff2ed;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;min-height:44px;padding:10px 15px;border:1px solid #b8c8bc;border-radius:9px;background:#fff;color:var(--ink);font-weight:650}button:hover:not(:disabled){background:var(--soft)}button:disabled{opacity:.48;cursor:default}button:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #ad7427;outline-offset:3px}
+.page{max-width:1220px;margin:auto;padding:34px 26px 24px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(30px,5vw,44px);line-height:1.1;letter-spacing:-.035em;margin:10px 0}h2{font-size:26px;line-height:1.25;margin:0 0 10px}h3{font-size:20px;line-height:1.35;margin:0 0 10px}p{margin:8px 0 16px}.lead{color:var(--muted);max-width:820px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}.tabs button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}
+.layout{display:grid;grid-template-columns:265px minmax(0,1fr);gap:28px;align-items:start}.sidebar{display:grid;gap:7px;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto;padding-right:4px}.sidebar-label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 0 5px}
+.activity-button{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;background:transparent;border-color:transparent;font-weight:550}.activity-button[aria-current=true]{background:var(--soft);border-color:#bfd0c3;font-weight:750}.n{font-size:12px;color:var(--muted);min-width:20px;font-variant-numeric:tabular-nums}
+.context,.small{font-size:14px;color:var(--muted)}.progress{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:18px 0 12px;font-size:14px}.badge{background:var(--soft);padding:4px 9px;border-radius:6px;font-size:12px;font-weight:750}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,32px);box-shadow:0 5px 22px #15372308}fieldset{border:0;padding:0;margin:0}legend{font-size:20px;font-weight:750;line-height:1.45;padding:0;margin-bottom:10px}
+.options{display:grid;gap:10px;margin:18px 0}.option{display:flex;align-items:flex-start;gap:12px;padding:13px 15px;border:1px solid var(--line);border-radius:10px;cursor:pointer}.option:has(:checked){border-color:var(--accent);background:var(--soft);box-shadow:inset 0 0 0 1px var(--accent)}.option input{width:19px;height:19px;margin:3px 0 0;accent-color:var(--accent);flex-shrink:0}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.feedback{margin-top:20px;padding:13px 15px;border-left:4px solid #b78635;background:var(--warn);border-radius:7px}.feedback.correct{border-left-color:#4b8058;background:var(--good)}.feedback h3{font-size:18px;margin:0 0 4px}.feedback p{margin:0}
+.explanation{margin-top:20px;border-top:1px solid var(--line);padding-top:18px}dl{margin:0}dt{font-weight:800;margin-top:12px}dt:first-child{margin-top:0}dd{margin:3px 0 0}
+.info p:last-child{margin-bottom:0}.info ul{padding-left:22px}.note{background:#f6f7f4;border-left:3px solid #83988b;padding:12px 14px;border-radius:7px;font-size:14px}
+.chain{list-style:none;padding:0;margin:18px 0 0}.chain-step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;position:relative;padding-bottom:20px}.chain-step:not(:last-child):before{content:"";position:absolute;left:14px;top:30px;bottom:0;border-left:1px solid var(--line)}.chain-number{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--soft);font-size:13px;font-weight:800}.chain-step[aria-current=step] .chain-number{background:var(--accent);color:white}.chain-label{font-weight:800;margin:0}.chain-detail{margin:5px 0 0}
+.nav{display:flex;gap:9px;flex-wrap:wrap;justify-content:space-between;margin:16px 0}.notice{min-height:1em;font-size:13px;color:var(--muted)}details.learning{font-size:14px;margin-top:16px}details.learning summary{cursor:pointer;color:var(--muted)}.footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}
+.skip{position:absolute;top:-100px;left:14px;background:white;padding:10px;z-index:100}.skip:focus{top:10px}
+@media(max-width:800px){.page{padding:24px 16px}.layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;flex-wrap:wrap;max-height:none}.sidebar-label{width:100%}.activity-button{width:auto;flex:1 1 180px;border-color:var(--line)}}
+@media(max-width:430px){.card{padding:18px}.actions button,.nav button{flex:1 1 100%}.n{display:none}}
+@media print{.tabs,.sidebar,.nav,.actions,.skip,.notice{display:none!important}.layout{display:block}.page{max-width:none;padding:0}.card{box-shadow:none}}
 </style>
 </head>
 <body>
-<a href="#activity-heading" class="skip">Naar de oefening</a>
+<a class="skip" href="#activity-heading">Naar de lesinhoud</a>
 <div class="page">
-<header><div class="eyebrow">Klinisch redeneren · Anesthesie · Bijeenkomst 4</div><h1 id="course-title"></h1><p id="course-subtitle" class="lead"></p></header>
-<nav class="modebar" aria-label="Kies oefeningen of casussen"><button type="button" data-kind="exercise" aria-pressed="true">Voorspeloefeningen · 6</button><button type="button" data-kind="case" aria-pressed="false">Casussen · 2</button></nav>
+<header>
+<div class="eyebrow">AZT · Klinisch redeneren AM · Bijeenkomst 4</div>
+<h1 id="course-title"></h1>
+<p id="course-subtitle" class="lead"></p>
+</header>
+<nav class="tabs" aria-label="Lesonderdelen">
+<button type="button" data-kind="learn" aria-pressed="true">Uitleg</button>
+<button type="button" data-kind="check" aria-pressed="false">Zelfchecks</button>
+<button type="button" data-kind="case" aria-pressed="false">Casussen</button>
+<button type="button" data-kind="review" aria-pressed="false">Afronding</button>
+</nav>
 <div class="layout">
-<nav id="activity-list" class="sidebar" aria-label="Kies een oefening"></nav>
-<main id="main">
-<header class="lesson-header"><h2 id="activity-heading" tabindex="-1"></h2><p id="activity-intro" class="intro"></p><p id="activity-context" class="context"></p></header>
-<div class="progress"><span class="badge" id="position"></span><span id="stage-name"></span></div>
-<article class="card" id="stage" aria-label="Oefening"></article>
-<div class="navigation"><button type="button" id="previous">Vorig onderdeel</button><button type="button" class="primary" id="forward">Verder</button><button type="button" id="restart" hidden>Opnieuw doorlopen</button><button type="button" class="primary" id="next-activity" hidden>Volgende oefening</button></div>
+<nav id="activity-list" class="sidebar" aria-label="Kies een lesonderdeel"></nav>
+<main>
+<header>
+<h2 id="activity-heading" tabindex="-1"></h2>
+<p id="activity-intro"></p>
+</header>
+<div class="progress"><span id="position" class="badge"></span><span id="stage-name"></span></div>
+<article id="stage" class="card"></article>
+<div class="nav">
+<button id="previous" type="button">Vorig onderdeel</button>
+<button id="forward" type="button" class="primary">Verder</button>
+<button id="restart" type="button" hidden>Opnieuw doorlopen</button>
+<button id="next-activity" type="button" class="primary" hidden>Volgende lesonderdeel</button>
+</div>
 <p id="navigation-note" class="notice"></p>
-<details class="learning"><summary>Leerdoel</summary><p id="learning-goal"></p></details>
-</main></div>
-<footer class="footer">Componentstandaard v1.0 · Geen punten of score. Je keuzes blijven bewaard tijdens het wisselen tussen oefeningen en casussen, zolang deze pagina openstaat.<details><summary>Inhoud en bronnen</summary><p>Gebaseerd op de gezamenlijk uitgewerkte oefeningen voor bijeenkomst 4. Bij de casussen zijn onder meer onderstaande bronnen gebruikt. De bloedingsrichtlijn betreft trauma; de oefening gebruikt de algemene principes van bloedverlies en broncontrole.</p><ul id="sources"></ul></details></footer>
+<details class="learning"><summary>Leerdoel van dit onderdeel</summary><p id="learning-goal"></p></details>
+</main>
+</div>
+<footer class="footer">
+<p><strong>Standalone les:</strong> geen externe scripts, frameworks, netwerkverzoeken of opslag van persoonsgegevens. Werkt lokaal en via GitHub Pages.</p>
+<details><summary>Inhoudelijke basis en begrenzing</summary>
+<p id="source-note"></p>
+<p>Waar de aangeleverde bronnen geen expliciet causaal antwoordmodel geven — met name voor het mechanistische effect van algehele anesthesie op de microcirculatie — is geen aanvullende medische verklaring toegevoegd.</p>
+</details>
+</footer>
 <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 <noscript>Schakel JavaScript in om de interactieve oefeningen te gebruiken.</noscript>
 </div>
-<!--
-INHOUD AANPASSEN — COMPONENTSTANDAARD 1.0
-Alles wat per les verandert staat in het JSON-blok #course-content hieronder.
-De renderer gebruikt dezelfde functies voor alle vragen en casussen.
 
-course: schemaVersion, id, title, subtitle, activities[], sources[].
-activity: unieke id, kind (exercise|case), title, intro, context (optioneel),
-          learningGoal, stages[]. Volgorde in de array bepaalt de navigatie.
-stage: unieke id, type en title.
-Vraagtypes: predictFirst, primaryProblem, monitoringChoice, interventionChoice.
-  question, context (optioneel), options:[{id,text}], correct (optie-id),
-  feedback (bij juist), hint (algemeen) OF hints:{optie-id:tekst},
-  explanation:[[kop,tekst],...].
-  Een predictFirst zonder explanation opent de volgende causeEffect direct.
-causeEffect: steps:[{label,detail},...].
-summary: heading, entries:[[kop,tekst],...], conclusion.
-
-Nieuwe oefening of casus: kopieer één activity, geef alle id's unieke waarden,
-pas de inhoud aan. Optie-id's zijn stabiele sleutels; correct verwijst ernaar.
-De validator meldt ontbrekende of ongeldige inhoud voordat de les start.
-Antwoordvolgorde wordt niet willekeurig aangepast. Geen externe scripts,
-netwerkverzoeken, opslag van persoonsgegevens of build-stap vereist.
--->
 <script id="course-content" type="application/json">
-{
-  "schemaVersion": "1.0",
-  "id": "cv-klre-4",
-  "title": "Cardiovasculair redeneren",
-  "subtitle": "Van fysiologische voorspelling naar een onderbouwde klinische keuze.",
-  "activities": [
-    {
-      "id": "cv-pf-001",
-      "kind": "exercise",
-      "title": "SVR",
-      "learningGoal": "Het effect van SVR op de diastolische bloeddruk voorspellen.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "De systemische vaatweerstand (SVR) neemt af. Wat verwacht je dat er met de diastolische bloeddruk gebeurt?",
-          "context": "Ga uit van gelijkblijvende overige factoren, waaronder hartfrequentie en arteriële compliantie, zonder compensatie.",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Stijgt"
-            },
-            {
-              "id": "option-1",
-              "text": "Daalt"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Denk aan wat er tijdens de diastole met de arteriële druk gebeurt als bloed gemakkelijker naar de perifere vaten kan wegstromen.",
-          "feedback": "Bij gelijkblijvende overige factoren stroomt bloed bij een lagere vaatweerstand sneller uit het arteriële vaatbed. De diastolische druk daalt.",
-          "explanation": [],
-          "id": "cv-pf-001-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Perifere vasodilatatie",
-              "detail": "De perifere arteriolen verwijden."
-            },
-            {
-              "label": "Systemische vaatweerstand daalt",
-              "detail": "Een grotere vaatdiameter vermindert de weerstand tegen de bloedstroom."
-            },
-            {
-              "label": "Snellere afname van de arteriële druk tijdens de diastole",
-              "detail": "Bloed kan gemakkelijker vanuit de arteriën naar de perifere circulatie stromen."
-            },
-            {
-              "label": "Diastolische bloeddruk daalt",
-              "detail": "Bij gelijkblijvende overige factoren is de arteriële druk aan het einde van de diastole lager."
-            }
-          ],
-          "id": "cv-pf-001-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-pf-002",
-      "kind": "exercise",
-      "title": "Preload",
-      "learningGoal": "Het effect van preload op het slagvolume voorspellen.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "De preload neemt af. Wat verwacht je dat er met het slagvolume gebeurt?",
-          "context": "Ga uit van een normaal functionerend hart, met gelijkblijvende afterload en contractiliteit.",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Stijgt"
-            },
-            {
-              "id": "option-1",
-              "text": "Daalt"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Denk aan de rek van de hartspiervezels aan het einde van de diastole en het Frank-Starlingmechanisme.",
-          "feedback": "Minder preload betekent minder einddiastolische rek. Via het Frank-Starlingmechanisme neemt het slagvolume af.",
-          "explanation": [],
-          "id": "cv-pf-002-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Preload daalt",
-              "detail": "De einddiastolische belasting van de hartspier neemt af."
-            },
-            {
-              "label": "Minder einddiastolische rek van hartspiervezels",
-              "detail": "De hartspiervezels zijn vóór de contractie minder uitgerekt."
-            },
-            {
-              "label": "Minder krachtontwikkeling via het Frank-Starlingmechanisme",
-              "detail": "Bij gelijkblijvende contractiliteit geeft minder rek minder krachtontwikkeling via Frank-Starling."
-            },
-            {
-              "label": "Slagvolume daalt",
-              "detail": "Het normaal functionerende ventrikel pompt minder bloed uit per hartslag."
-            }
-          ],
-          "id": "cv-pf-002-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-pf-003",
-      "kind": "exercise",
-      "title": "Afterload",
-      "learningGoal": "Het acute effect van afterload op het slagvolume voorspellen.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "De afterload neemt acuut toe. Wat verwacht je dat er met het slagvolume gebeurt?",
-          "context": "Ga uit van gelijkblijvende preload en contractiliteit, zonder compensatie.",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Stijgt"
-            },
-            {
-              "id": "option-1",
-              "text": "Daalt"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Denk aan de belasting waartegen het ventrikel bloed moet uitpompen.",
-          "feedback": "Bij een grotere belasting tijdens de ejectie pompt het ventrikel onder deze omstandigheden minder bloed uit per hartslag.",
-          "explanation": [],
-          "id": "cv-pf-003-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Afterload stijgt",
-              "detail": "De belasting waartegen het ventrikel uitpompt, neemt acuut toe."
-            },
-            {
-              "label": "Ventrikel moet tegen een grotere belasting uitpompen",
-              "detail": "Bij dezelfde preload en contractiliteit wordt de ejectie bemoeilijkt."
-            },
-            {
-              "label": "Minder bloed wordt uitgepompt per hartslag",
-              "detail": "Het ventrikel kan tijdens deze contractie minder bloed uitpompen."
-            },
-            {
-              "label": "Slagvolume daalt",
-              "detail": "Het uitgepompte volume per hartslag neemt af."
-            }
-          ],
-          "id": "cv-pf-003-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-pf-004",
-      "kind": "exercise",
-      "title": "Veneuze return",
-      "learningGoal": "De relatie tussen veneuze return en cardiac output uitleggen.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "De veneuze return neemt af. Wat verwacht je dat er met het cardiac output gebeurt?",
-          "context": "Ga uit van een normaal functionerend hart en gelijkblijvende hartfrequentie, zonder compensatie.",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Stijgt"
-            },
-            {
-              "id": "option-1",
-              "text": "Daalt"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Denk aan de relatie tussen veneuze return, preload en slagvolume. Cardiac output = hartfrequentie × slagvolume.",
-          "feedback": "Minder veneuze return vermindert de vulling en het slagvolume. Bij gelijkblijvende hartfrequentie daalt het cardiac output.",
-          "explanation": [],
-          "id": "cv-pf-004-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Veneuze return daalt",
-              "detail": "Er stroomt minder bloed terug naar het hart."
-            },
-            {
-              "label": "Preload neemt af",
-              "detail": "De verminderde aanvoer verlaagt de ventrikelvulling."
-            },
-            {
-              "label": "Slagvolume daalt",
-              "detail": "Via het Frank-Starlingmechanisme neemt het uitgepompte volume per hartslag af."
-            },
-            {
-              "label": "Cardiac output daalt",
-              "detail": "Bij gelijkblijvende hartfrequentie betekent minder slagvolume ook minder bloed per minuut."
-            }
-          ],
-          "id": "cv-pf-004-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-pf-005",
-      "kind": "exercise",
-      "title": "Spinaal",
-      "learningGoal": "Het effect van spinale sympathicusblokkade op SVR beredeneren.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "Wat verwacht je dat er met de systemische vaatweerstand gebeurt bij spinale anesthesie met een uitgebreide sympathicusblokkade?",
-          "context": "Beschouw het directe effect van de blokkade, vóór behandeling of compensatie.",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Stijgt"
-            },
-            {
-              "id": "option-1",
-              "text": "Daalt"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Wat gebeurt er met de vaattonus wanneer de sympathische aansturing in het geblokkeerde gebied wegvalt?",
-          "feedback": "Sympathicusblokkade verlaagt de vaattonus in het geblokkeerde gebied. Vasodilatatie leidt tot een lagere SVR.",
-          "explanation": [],
-          "id": "cv-pf-005-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Spinale anesthesie",
-              "detail": "Het lokaal anestheticum blokkeert zenuwgeleiding, waaronder die van sympathische zenuwvezels."
-            },
-            {
-              "label": "Sympathicusblokkade",
-              "detail": "In het geblokkeerde gebied neemt de sympathische aansturing van de bloedvaten af."
-            },
-            {
-              "label": "Arteriolaire vasodilatatie in het geblokkeerde gebied",
-              "detail": "Door het wegvallen van vasoconstrictieve tonus verwijden de arteriolen in dat gebied."
-            },
-            {
-              "label": "Systemische vaatweerstand daalt",
-              "detail": "Bij een voldoende uitgebreide blokkade verlaagt deze vasodilatatie de totale systemische vaatweerstand."
-            }
-          ],
-          "id": "cv-pf-005-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-pf-006",
-      "kind": "exercise",
-      "title": "Tachycardie",
-      "learningGoal": "Het effect van tachycardie op de diastolische vultijd voorspellen.",
-      "intro": "Eerst voorspellen, daarna het mechanisme stap voor stap verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "Wat gebeurt er met de diastolische vultijd per hartslag bij sterke tachycardie?",
-          "context": "",
-          "options": [
-            {
-              "id": "option-0",
-              "text": "Wordt langer"
-            },
-            {
-              "id": "option-1",
-              "text": "Wordt korter"
-            },
-            {
-              "id": "option-2",
-              "text": "Blijft gelijk"
-            },
-            {
-              "id": "option-3",
-              "text": "Niet te voorspellen"
-            }
-          ],
-          "correct": "option-1",
-          "hint": "Denk aan de tijd die beschikbaar is voor één hartcyclus wanneer er meer hartslagen per minuut zijn.",
-          "feedback": "Een hogere hartfrequentie verkort de hartcyclus. Vooral de diastole wordt korter, waardoor er per hartslag minder tijd is voor vulling.",
-          "explanation": [],
-          "id": "cv-pf-006-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Hartfrequentie stijgt",
-              "detail": "Het aantal hartslagen per minuut neemt toe."
-            },
-            {
-              "label": "Duur van één hartcyclus neemt af",
-              "detail": "Voor iedere hartslag is minder tijd beschikbaar."
-            },
-            {
-              "label": "Vooral de diastole wordt korter",
-              "detail": "De diastole wordt relatief sterker verkort dan de systole."
-            },
-            {
-              "label": "Minder tijd voor ventrikelvulling per hartslag",
-              "detail": "Per hartslag blijft minder tijd over waarin het ventrikel zich kan vullen."
-            }
-          ],
-          "id": "cv-pf-006-stap-2"
-        }
-      ]
-    },
-    {
-      "id": "cv-case-spinaal",
-      "kind": "case",
-      "title": "Hypotensie na spinale anesthesie",
-      "learningGoal": "Het effect van sympathicusblokkade verklaren en passende monitoring en een doelgerichte interventie kiezen.",
-      "intro": "Een volwassen patiënt ondergaat een geplande onderbeenoperatie onder spinale anesthesie. Na de blokkade daalt de bloeddruk. Er is op dit moment geen relevant bloedverlies.",
-      "context": "Je onderzoekt hoe sympathicusblokkade deze verandering kan verklaren.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "Wat verwacht je dat er met de systemische vaatweerstand gebeurt bij een uitgebreide spinale sympathicusblokkade?",
-          "context": "Beschouw het directe effect van de blokkade, vóór behandeling of compensatie.",
-          "options": [
-            {
-              "id": "up",
-              "text": "Stijgt"
-            },
-            {
-              "id": "down",
-              "text": "Daalt"
-            },
-            {
-              "id": "same",
-              "text": "Blijft gelijk"
-            }
-          ],
-          "correct": "down",
-          "hint": "Denk aan de vaattonus wanneer de sympathische aansturing afneemt.",
-          "feedback": "De SVR daalt door vasodilatatie in het geblokkeerde gebied.",
-          "explanation": [
-            [
-              "Verklaring",
-              "Minder sympathische vaattonus leidt tot arteriolaire vasodilatatie en een lagere systemische vaatweerstand. Het volgende onderdeel laat dit stap voor stap zien."
-            ]
-          ],
-          "id": "cv-case-spinaal-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Spinale anesthesie",
-              "detail": "Het lokaal anestheticum blokkeert zenuwgeleiding, waaronder die van sympathische zenuwvezels."
-            },
-            {
-              "label": "Sympathische vaattonus neemt af",
-              "detail": "In het geblokkeerde gebied vermindert de sympathische aansturing van de bloedvaten."
-            },
-            {
-              "label": "Arteriolen verwijden; SVR daalt",
-              "detail": "De verminderde arteriolaire weerstand kan de arteriële bloeddruk verlagen."
-            },
-            {
-              "label": "Ook veneuze dilatatie kan bijdragen",
-              "detail": "De veneuze capaciteit neemt toe. Daardoor kunnen veneuze return, preload en slagvolume afnemen. De bloeddrukdaling kan dus via meerdere mechanismen ontstaan."
-            }
-          ],
-          "id": "cv-case-spinaal-stap-2"
-        },
-        {
-          "type": "primaryProblem",
-          "title": "Benoem het aandachtspunt",
-          "question": "Bij welk cardiovasculair aandachtspunt hoort de afgenomen arteriolaire vaattonus die je zojuist hebt verklaard?",
-          "context": "Classificeer dit specifieke mechanisme. Je kiest hiermee niet de enige mogelijke oorzaak van de bloeddrukdaling.",
-          "options": [
-            {
-              "id": "volume",
-              "text": "Volume / veneuze return"
-            },
-            {
-              "id": "conduction",
-              "text": "Prikkelvorming en -geleiding"
-            },
-            {
-              "id": "pump",
-              "text": "Pompfunctie"
-            },
-            {
-              "id": "arterial",
-              "text": "Arteriële distributie"
-            },
-            {
-              "id": "micro",
-              "text": "Systemische microcirculatie"
-            }
-          ],
-          "correct": "arterial",
-          "hints": {
-            "volume": "Veneuze dilatatie past bij volume / veneuze return. De vraag richt zich hier op de arteriolaire vaattonus.",
-            "conduction": "Prikkelvorming en -geleiding gaan over de elektrische aansturing van het hart. Waar hoort arteriolaire vaatweerstand bij?",
-            "pump": "Een verandering van het slagvolume kan een gevolg zijn. De genoemde verandering zit hier in de arteriolen.",
-            "micro": "Weefselperfusie kan veranderen, maar classificeer eerst het genoemde mechanisme: de afgenomen arteriolaire vaattonus."
-          },
-          "feedback": "Arteriolaire vaattonus en systemische vaatweerstand horen bij arteriële distributie.",
-          "explanation": [
-            [
-              "Het gekozen aandachtspunt",
-              "Arteriële distributie: afgenomen arteriolaire vaattonus verlaagt de SVR."
-            ],
-            [
-              "Het andere mechanisme",
-              "Veneuze dilatatie beïnvloedt volume / veneuze return. Beide aandachtspunten kunnen tegelijk bijdragen aan hypotensie na een spinaal."
-            ]
-          ],
-          "id": "cv-case-spinaal-stap-3"
-        },
-        {
-          "type": "monitoringChoice",
-          "title": "Kies passende monitoring",
-          "question": "Welke aanpak past aanvankelijk het best bij deze situatie?",
-          "context": "Aanvullende casusinformatie: de patiënt heeft een laag cardiovasculair risico. De bloeddrukdaling is beperkt en kortdurend en reageert goed op behandeling. De NIBP-manchet geeft betrouwbare metingen. Er is geen andere indicatie voor een arterielijn.",
-          "options": [
-            {
-              "id": "cuff",
-              "text": "NIBP voortzetten met een passend kort meetinterval en de patiënt blijven beoordelen"
-            },
-            {
-              "id": "line",
-              "text": "Bij iedere bloeddrukdaling na een spinaal direct een arterielijn plaatsen"
-            },
-            {
-              "id": "spo2",
-              "text": "Alleen SpO₂ volgen zolang de saturatie normaal blijft"
-            },
-            {
-              "id": "wait",
-              "text": "Minder vaak bloeddruk meten omdat de daling verwacht was"
-            }
-          ],
-          "correct": "cuff",
-          "hints": {
-            "line": "Continue drukinformatie kan nuttig zijn. Is een invasieve meting bij deze beperkte, goed behandelbare daling en betrouwbare manchetmetingen nu noodzakelijk?",
-            "spo2": "Een normale saturatie vertelt niet of de bloeddruk voldoende is. Welke meting volgt de bloeddruk zelf?",
-            "wait": "Dat de daling verklaarbaar is, maakt controle niet minder nodig. Hoe volg je het herstel en herken je een nieuwe daling?"
-          },
-          "feedback": "Bij deze laagrisicosituatie kan betrouwbare NIBP met een passend kort meetinterval volstaan.",
-          "explanation": [
-            [
-              "Wat meet je?",
-              "De arteriële bloeddruk op opeenvolgende meetmomenten met een niet-invasieve manchet."
-            ],
-            [
-              "Waarom passend?",
-              "De daling is beperkt, kortdurend en reageert goed op behandeling. Zonder aanvullende indicatie is invasieve monitoring niet automatisch nodig."
-            ],
-            [
-              "Hoe snel?",
-              "Iedere meetcyclus geeft nieuwe waarden. Pas het interval aan het klinische verloop en het lokale protocol aan; je ziet hiermee niet iedere hartslag."
-            ],
-            [
-              "Wat blijf je beoordelen?",
-              "Ernst en duur van hypotensie, klinische toestand, betrouwbaarheid van de metingen en reactie op behandeling. Ook verwachte hypotensie kan schadelijk zijn."
-            ]
-          ],
-          "id": "cv-case-spinaal-stap-4"
-        },
-        {
-          "type": "monitoringChoice",
-          "title": "Beoordeel of opschalen nodig is",
-          "question": "Stel dat de bloeddruk later blijft dalen ondanks behandeling en manchetmetingen herhaaldelijk mislukken. Welke herbeoordeling past daarbij?",
-          "context": "Dit is een vervolgsituatie: de eerdere aanname van een beperkte, goed behandelbare daling met betrouwbare metingen geldt nu niet meer.",
-          "options": [
-            {
-              "id": "same",
-              "text": "Dezelfde monitoring ongewijzigd voortzetten, omdat hypotensie bij een spinaal kan voorkomen"
-            },
-            {
-              "id": "continuous",
-              "text": "Direct oorzaak en behandeling herbeoordelen en continue bloeddrukmonitoring, doorgaans via een arteriële katheter, overwegen"
-            },
-            {
-              "id": "ecg",
-              "text": "De bloeddrukmeting vervangen door alleen ECG-monitoring"
-            }
-          ],
-          "correct": "continuous",
-          "hints": {
-            "same": "Het verloop en de betrouwbaarheid van de metingen zijn veranderd. Past de eerdere monitoring nog bij de informatie die je nu nodig hebt?",
-            "ecg": "Het ECG geeft ritme-informatie, maar vervangt geen betrouwbare bloeddrukmeting."
-          },
-          "feedback": "Aanhoudende instabiliteit en onbetrouwbare manchetmetingen zijn redenen om de monitoring op te schalen en de oorzaak en behandeling opnieuw te beoordelen.",
-          "explanation": [
-            [
-              "Wat verandert?",
-              "Er is nu behoefte aan betrouwbare, continue drukinformatie om snelle veranderingen en de behandelrespons te volgen."
-            ],
-            [
-              "Welke afweging maak je?",
-              "Bij deze instabiliteit kan een arteriële katheter aangewezen zijn. De keuze hangt af van het volledige risico- en behandelbeeld."
-            ],
-            [
-              "Wat gebeurt tegelijk?",
-              "Oorzaak en behandeling worden direct herbeoordeeld; het regelen van uitgebreidere monitoring vervangt de behandeling niet."
-            ],
-            [
-              "Wat blijft gelden?",
-              "Ook een betrouwbare arteriële drukcurve bewijst op zichzelf niet dat cardiac output en weefselperfusie voldoende zijn."
-            ]
-          ],
-          "id": "cv-case-spinaal-stap-5"
-        },
-        {
-          "type": "interventionChoice",
-          "title": "Koppel interventie en doel",
-          "question": "Het specifieke behandeldoel is de verlaagde SVR verhogen. Welke interventie grijpt daar het meest direct op aan?",
-          "context": "Kies op basis van het genoemde fysiologische doel.",
-          "options": [
-            {
-              "id": "fluid",
-              "text": "Vocht toedienen om de vulling te verhogen"
-            },
-            {
-              "id": "pressor",
-              "text": "Een vasopressor met overwegend α₁-werking, zoals fenylefrine"
-            },
-            {
-              "id": "pacing",
-              "text": "De hartfrequentie verhogen met pacing"
-            },
-            {
-              "id": "inotrope",
-              "text": "De contractiliteit verhogen met een positief inotrope interventie"
-            }
-          ],
-          "correct": "pressor",
-          "hints": {
-            "fluid": "Vocht richt zich op vulling en preload. Welke interventie verhoogt rechtstreeks de vaatweerstand?",
-            "pacing": "Pacing beïnvloedt de hartfrequentie. Het behandeldoel is hier de SVR verhogen.",
-            "inotrope": "Een inotroop effect beïnvloedt de hartspier. Welke interventie grijpt rechtstreeks aan op de vaatwand?"
-          },
-          "feedback": "α₁-stimulatie veroorzaakt vasoconstrictie en verhoogt de systemische vaatweerstand.",
-          "explanation": [
-            [
-              "Interventie",
-              "Een vasopressor met overwegend α₁-werking; fenylefrine is hier het voorbeeld."
-            ],
-            [
-              "Mechanisme",
-              "α₁-stimulatie laat gladde spiercellen in de vaatwand samentrekken."
-            ],
-            [
-              "Variabele",
-              "Arteriolaire vasoconstrictie verhoogt de SVR en de linkerventrikelafterload."
-            ],
-            [
-              "Verwacht effect",
-              "De arteriële bloeddruk stijgt. Dit betekent niet automatisch dat het cardiac output stijgt. Bij fenylefrine kunnen reflexbradycardie en een daling van het cardiac output optreden."
-            ]
-          ],
-          "id": "cv-case-spinaal-stap-6"
-        },
-        {
-          "type": "summary",
-          "title": "Je klinische redenering",
-          "heading": "Van mechanisme naar gerichte keuze",
-          "entries": [
-            [
-              "Voorspelling",
-              "Door sympathicusblokkade neemt de vaattonus af; de SVR kan dalen."
-            ],
-            [
-              "Probleemanalyse",
-              "Arteriolaire dilatatie hoort bij arteriële distributie. Veneuze dilatatie kan daarnaast de veneuze return verminderen."
-            ],
-            [
-              "Monitoring",
-              "Bij laag risico, een beperkte goed behandelbare daling en betrouwbare metingen kan NIBP met een passend kort interval volstaan. Aanhoudende instabiliteit of onbetrouwbare metingen vraagt om herbeoordeling en zo nodig continue, invasieve monitoring. Druk is geen directe meting van flow."
-            ],
-            [
-              "Interventie",
-              "Een α₁-werkende vasopressor verhoogt de SVR. Het effect op hartfrequentie, cardiac output en perfusie moet mee worden beoordeeld."
-            ]
-          ],
-          "conclusion": "Een bloeddrukdaling alleen is onvoldoende om de oorzaak vast te stellen. Deze oefening verbindt het mechanisme van sympathicusblokkade met gerichte keuzes.",
-          "id": "cv-case-spinaal-stap-7"
-        }
-      ]
-    },
-    {
-      "id": "cv-case-bloedverlies",
-      "kind": "case",
-      "title": "Acuut bloedverlies",
-      "learningGoal": "Het primaire probleem bij bloedverlies herkennen en monitoring en interventies aan het verloop koppelen.",
-      "intro": "Een volwassen patiënt met een vooraf normaal functionerend hart verliest tijdens een operatie in korte tijd veel bloed uit een chirurgische bloedingsbron. De bloeddruk daalt. Het team start direct de beoordeling en behandeling.",
-      "context": "Je onderzoekt het primaire probleem en koppelt monitoring en interventies aan het klinische verloop.",
-      "stages": [
-        {
-          "type": "predictFirst",
-          "title": "Voorspel eerst",
-          "question": "Wat verwacht je dat acuut volumeverlies doet met de preload?",
-          "context": "Beschouw het directe effect, vóór aanvulling van volume of compensatie.",
-          "options": [
-            {
-              "id": "up",
-              "text": "De preload stijgt"
-            },
-            {
-              "id": "down",
-              "text": "De preload daalt"
-            },
-            {
-              "id": "same",
-              "text": "De preload blijft gelijk"
-            }
-          ],
-          "correct": "down",
-          "hint": "Denk aan de hoeveelheid bloed die terugstroomt naar het hart en de vulling vóór contractie.",
-          "feedback": "Door het verlies van circulerend volume kunnen veneuze return en preload afnemen.",
-          "explanation": [
-            [
-              "Verklaring",
-              "Minder circulerend volume vermindert de aanvoer naar het hart. De volgende stappen verbinden dit met slagvolume en cardiac output."
-            ]
-          ],
-          "id": "cv-case-bloedverlies-stap-1"
-        },
-        {
-          "type": "causeEffect",
-          "title": "Verklaar het mechanisme",
-          "steps": [
-            {
-              "label": "Circulerend bloedvolume neemt af",
-              "detail": "Bloed verlaat de circulatie door de actieve bloeding."
-            },
-            {
-              "label": "Veneuze return en preload nemen af",
-              "detail": "Er kan minder bloed naar het hart terugstromen. De einddiastolische vulling en rek nemen af."
-            },
-            {
-              "label": "Slagvolume kan dalen",
-              "detail": "Bij gelijkblijvende contractiliteit en afterload geeft minder preload via het Frank-Starlingmechanisme een lager slagvolume."
-            },
-            {
-              "label": "Cardiac output en zuurstofaanbod kunnen dalen",
-              "detail": "Compensatie kan de daling aanvankelijk beperken. Bij fors bloedverlies kunnen zowel de bloedstroom als het verlies van erytrocyten het zuurstofaanbod bedreigen."
-            }
-          ],
-          "id": "cv-case-bloedverlies-stap-2"
-        },
-        {
-          "type": "primaryProblem",
-          "title": "Benoem het primaire probleem",
-          "question": "Welk cardiovasculair aandachtspunt wordt door dit bloedverlies als eerste rechtstreeks aangedaan?",
-          "context": "Het hart functioneerde vóór de bloeding normaal.",
-          "options": [
-            {
-              "id": "volume",
-              "text": "Volume / veneuze return"
-            },
-            {
-              "id": "conduction",
-              "text": "Prikkelvorming en -geleiding"
-            },
-            {
-              "id": "pump",
-              "text": "Pompfunctie"
-            },
-            {
-              "id": "arterial",
-              "text": "Arteriële distributie"
-            },
-            {
-              "id": "micro",
-              "text": "Systemische microcirculatie"
-            }
-          ],
-          "correct": "volume",
-          "hints": {
-            "conduction": "De hartfrequentie kan als compensatie veranderen. Welke verandering veroorzaakt het bloedverlies zelf?",
-            "pump": "Het slagvolume kan afnemen zonder primaire schade aan de hartspier. Denk aan de vulling van de pomp.",
-            "arterial": "De vaattonus kan als compensatie veranderen. Wat is de oorspronkelijke verandering?",
-            "micro": "Weefselperfusie kan bedreigd raken. Welk eerdere probleem veroorzaakt dat hier?"
-          },
-          "feedback": "Het primaire probleem is verlies van circulerend volume, met gevolgen voor de veneuze return.",
-          "explanation": [
-            [
-              "Primair",
-              "Volume / veneuze return wordt rechtstreeks geraakt door het bloedverlies."
-            ],
-            [
-              "Secundair",
-              "Veranderingen van hartfrequentie, vaattonus, slagvolume en weefselperfusie kunnen daarna volgen."
-            ]
-          ],
-          "id": "cv-case-bloedverlies-stap-3"
-        },
-        {
-          "type": "monitoringChoice",
-          "title": "Stem monitoring af op het risico",
-          "question": "Welke aanpak past bij het huidige verloop?",
-          "context": "Het bloedverlies houdt aan. De bloeddruk blijft dalen ondanks de eerste behandeling. NIBP-metingen zijn herhaaldelijk onbetrouwbaar. Het team behandelt de bloeding en de circulatoire instabiliteit al.",
-          "options": [
-            {
-              "id": "unchanged",
-              "text": "NIBP ongewijzigd voortzetten ondanks mislukte metingen"
-            },
-            {
-              "id": "continuous",
-              "text": "Continue, betrouwbare bloeddrukmonitoring regelen, doorgaans invasief, naast de lopende behandeling"
-            },
-            {
-              "id": "spo2",
-              "text": "De bloeddrukmeting vervangen door alleen SpO₂-monitoring"
-            }
-          ],
-          "correct": "continuous",
-          "hints": {
-            "unchanged": "De patiënt is instabiel en je metingen zijn onbetrouwbaar. Welke informatie heb je nu nodig?",
-            "spo2": "SpO₂ vertelt niet hoe hoog de bloeddruk is en kan normaal blijven bij circulatoire problemen."
-          },
-          "feedback": "Bij dit instabiele verloop en onbetrouwbare manchetmetingen is opschalen van de bloeddrukmonitoring passend.",
-          "explanation": [
-            [
-              "Wat meet je?",
-              "Met een arteriële katheter volg je de arteriële druk continu."
-            ],
-            [
-              "Waarom relevant?",
-              "Je hebt betrouwbare informatie nodig over snelle veranderingen en de reactie op behandeling."
-            ],
-            [
-              "Hoe snel?",
-              "Van hartslag tot hartslag. Het regelen van monitoring mag de behandeling van de bloeding niet vervangen of vertragen."
-            ],
-            [
-              "Verschil met de vorige casus",
-              "De keuze volgt uit ernst, verloop en betrouwbaarheid van de metingen. Bloedverlies op zichzelf betekent niet dat altijd een arterielijn nodig is."
-            ]
-          ],
-          "id": "cv-case-bloedverlies-stap-4"
-        },
-        {
-          "type": "monitoringChoice",
-          "title": "Beoordeel wat druk je vertelt",
-          "question": "Na behandeling stijgt de MAP. Kun je daarmee concluderen dat het zuurstofaanbod aan de weefsels voldoende is?",
-          "context": "Beoordeel de betekenis van één verbeterde meetwaarde.",
-          "options": [
-            {
-              "id": "yes",
-              "text": "Ja, een hogere MAP bewijst voldoende weefselperfusie"
-            },
-            {
-              "id": "together",
-              "text": "Nee, beoordeel de druk samen met klinische perfusietekenen en aanvullende metingen"
-            },
-            {
-              "id": "saturation",
-              "text": "Alleen een normale SpO₂ is daarnaast voldoende"
-            }
-          ],
-          "correct": "together",
-          "hints": {
-            "yes": "Druk en bloedstroom zijn verschillende grootheden. Welke informatie over perfusie en zuurstoftransport ontbreekt?",
-            "saturation": "Een normale saturatie zegt niet hoeveel hemoglobine aanwezig is of hoeveel bloed de weefsels bereikt."
-          },
-          "feedback": "Een verbeterde MAP is relevant, maar bewijst niet zelfstandig dat bloedstroom en zuurstofaanbod voldoende zijn.",
-          "explanation": [
-            [
-              "Wat beoordeel je samen?",
-              "Het klinische verloop en perfusietekenen, bijvoorbeeld capillaire refill, huid en diurese, naast relevante laboratoriumtrends zoals lactaat en Hb."
-            ],
-            [
-              "Wat zegt lactaat?",
-              "Het verloop kan helpen om hypoperfusie en behandelrespons te beoordelen. Lactaat is geen directe flowmeting en kent ook andere oorzaken van stijging."
-            ],
-            [
-              "Wat zegt Hb?",
-              "Hb helpt het zuurstoftransport te beoordelen. Een vroege, nog normale Hb-waarde sluit ernstig acuut bloedverlies niet uit."
-            ],
-            [
-              "Hoe snel?",
-              "Deze signalen veranderen niet allemaal even snel. Interpreteer trends en de tijd sinds het bloedverlies samen."
-            ]
-          ],
-          "id": "cv-case-bloedverlies-stap-5"
-        },
-        {
-          "type": "interventionChoice",
-          "title": "Koppel interventie en behandeldoel",
-          "question": "Het specifieke doel is het verdere verlies uit de actieve chirurgische bloedingsbron stoppen. Welke interventie grijpt daar rechtstreeks op aan?",
-          "context": "Circulatoire ondersteuning en behandeling van de bloeding lopen gelijktijdig. Je kiest hier op basis van dit ene behandeldoel.",
-          "options": [
-            {
-              "id": "source",
-              "text": "De chirurgische bloedingsbron laten controleren en stelpen"
-            },
-            {
-              "id": "fluid",
-              "text": "Alleen intraveneus vocht toedienen"
-            },
-            {
-              "id": "pressor",
-              "text": "Alleen met een vasopressor de bloeddruk verhogen"
-            },
-            {
-              "id": "blood",
-              "text": "Alleen erytrocyten toedienen zonder de bloedingsbron te behandelen"
-            }
-          ],
-          "correct": "source",
-          "hints": {
-            "fluid": "Aanvulling kan de vulling ondersteunen, maar wat stopt het verlies uit een actief bloedend vat?",
-            "pressor": "Een hogere vaatweerstand kan de druk beïnvloeden, maar sluit de chirurgische bloedingsbron niet.",
-            "blood": "Erytrocyten kunnen bijdragen aan zuurstoftransport. Welk onderdeel voorkomt dat bloed via deze bron blijft verdwijnen?"
-          },
-          "feedback": "Controle van de bloedingsbron grijpt rechtstreeks aan op het verdere bloedverlies.",
-          "explanation": [
-            [
-              "Interventie",
-              "Het operatieteam controleert en stelpt de chirurgische bloedingsbron."
-            ],
-            [
-              "Mechanisme",
-              "Effectieve lokale hemostase stopt het bloedverlies via deze bron."
-            ],
-            [
-              "Variabele",
-              "De snelheid van verder bloedverlies neemt af of wordt nul bij deze bron."
-            ],
-            [
-              "Verwacht effect",
-              "Verder verlies wordt beperkt. Het reeds ontstane volume- en erytrocytentekort is daarmee niet automatisch hersteld; circulatoire en hemostatische behandeling blijven afgestemd op de toestand nodig."
-            ]
-          ],
-          "id": "cv-case-bloedverlies-stap-6"
-        },
-        {
-          "type": "summary",
-          "title": "Je klinische redenering",
-          "heading": "Van bloedverlies naar gerichte keuzes",
-          "entries": [
-            [
-              "Primair probleem",
-              "Acuut verlies van circulerend volume vermindert de veneuze return en preload."
-            ],
-            [
-              "Gevolgen",
-              "Slagvolume, cardiac output en zuurstofaanbod kunnen afnemen. Compensatie kan dit aanvankelijk maskeren."
-            ],
-            [
-              "Monitoring",
-              "Stem de intensiteit af op risico, verloop en meetbetrouwbaarheid. Beoordeel druk samen met perfusietekenen en aanvullende trends."
-            ],
-            [
-              "Interventie",
-              "Behandel de bloedingsbron en ondersteun gelijktijdig de circulatie. Broncontrole herstelt niet vanzelf het reeds verloren volume of de erytrocyten."
-            ]
-          ],
-          "conclusion": "De onderdelen zijn leerstappen. In de klinische situatie verlopen beoordeling, monitoring en behandeling gelijktijdig.",
-          "id": "cv-case-bloedverlies-stap-7"
-        }
-      ]
-    }
-  ],
-  "sources": [
-    {
-      "title": "Intraoperative haemodynamic monitoring and management · DGAI (2024)",
-      "url": "https://link.springer.com/article/10.1007/s10877-024-01132-7"
-    },
-    {
-      "title": "Fenylefrine · productinformatie",
-      "url": "https://www.medicines.org.uk/emc/product/12563/smpc"
-    },
-    {
-      "title": "European guideline on major bleeding following trauma · zesde editie (2023)",
-      "url": "https://link.springer.com/article/10.1186/s13054-023-04327-7"
-    }
-  ]
-}
+{"schemaVersion": "2.0", "id": "azt-klre-am-les4-cardiovasculair", "title": "Cardiovasculair klinisch redeneren", "subtitle": "Bijeenkomst 4 · van fysiologie naar monitoring, interventie en herbeoordeling", "sourceNote": "Inhoudelijk gebaseerd op de PowerPoint ‘AZT KLRE AM les 4- 24 25’ en de handleiding ‘Minor AM Klinisch Redeneren-AZT_26-27’. De bestaande HTML is uitsluitend gebruikt als referentie voor componentstructuur en interactiepatronen.", "learningGoals": ["De klinische aandachtspunten van het cardiovasculair systeem benoemen en uitleggen.", "Beredeneren welk effect locoregionale en algehele anesthesie kan hebben op de klinische aandachtspunten bij een ASA I–II-patiënt.", "Interventies benoemen die noodzakelijk zijn om de circulatie stabiel te houden tijdens locoregionale en algehele anesthesie.", "Soorten monitoring benoemen die nodig zijn om de cardiovasculaire aandachtspunten tijdens de operatie te monitoren."], "reasoningLine": ["Situatie", "Primair probleem of aangedaan systeem", "Fysiologische/pathofysiologische verandering", "Verwacht klinisch gevolg", "Monitoring/observatie", "Interventie", "Verwacht effect", "Herbeoordeling"], "activities": [{"id": "intro", "kind": "learn", "title": "Start: zo redeneer je over de circulatie", "learningGoal": "De vaste redeneerstructuur voor deze les herkennen.", "intro": "De les gebruikt steeds dezelfde klinische denklijn. Niet elk onderdeel doorloopt alle stappen, maar in de casussen doorloop je de hele keten.", "stages": [{"id": "intro-1", "type": "info", "title": "Leerdoelen", "paragraphs": [], "bullets": ["De klinische aandachtspunten van het cardiovasculair systeem benoemen en uitleggen.", "Beredeneren welk effect locoregionale en algehele anesthesie kan hebben op de klinische aandachtspunten bij een ASA I–II-patiënt.", "Interventies benoemen die noodzakelijk zijn om de circulatie stabiel te houden tijdens locoregionale en algehele anesthesie.", "Soorten monitoring benoemen die nodig zijn om de cardiovasculaire aandachtspunten tijdens de operatie te monitoren."], "note": ""}, {"id": "intro-2", "type": "info", "title": "Vaste redeneerlijn", "paragraphs": ["Gebruik bij iedere klinische verandering dezelfde volgorde:"], "bullets": ["Situatie", "Primair probleem of aangedaan systeem", "Fysiologische/pathofysiologische verandering", "Verwacht klinisch gevolg", "Monitoring/observatie", "Interventie", "Verwacht effect", "Herbeoordeling"], "note": "Begin niet met een medicijn of losse meetwaarde. Bepaal eerst welk onderdeel van de circulatie primair verandert."}]}, {"id": "subsystems", "kind": "learn", "title": "De vijf cardiovasculaire aandachtspunten", "learningGoal": "De vijf klinische aandachtspunten benoemen en van elkaar onderscheiden.", "intro": "Gebruik deze vijf categorieën als kapstok voor de rest van de les.", "stages": [{"id": "sub-1", "type": "info", "title": "Vijf functionele categorieën", "paragraphs": [], "bullets": ["1. Volume / veneuze return — hoeveel bloed keert terug naar het hart en hoeveel vulling is beschikbaar?", "2. Prikkelvorming en -geleiding — ontstaat en verspreidt de elektrische impuls zich passend?", "3. Pompfunctie — zet het hart de vulling om in effectieve output?", "4. Arteriële distributie — hoeveel weerstand ondervindt het bloed in het arteriële vaatbed?", "5. Systemische microcirculatie — bereikt de circulatie de weefsels en organen?"], "note": ""}, {"id": "sub-2", "type": "info", "title": "Waarom dit model?", "paragraphs": ["Dezelfde klinische observatie, zoals een lage bloeddruk, kan verschillende oorzaken hebben. Door eerst het primaire aandachtspunt te bepalen voorkom je dat je rechtstreeks van een getal naar een interventie springt."], "bullets": [], "note": ""}]}, {"id": "hemodynamics", "kind": "learn", "title": "Hemodynamisch basismodel", "learningGoal": "De relaties tussen bloeddruk, cardiac output, hartfrequentie, slagvolume, preload en afterload gebruiken.", "intro": "De PowerPoint koppelt bloeddruk aan cardiac output en vaatweerstand en beschrijft cardiac output als hartfrequentie × slagvolume.", "stages": [{"id": "hemo-1", "type": "info", "title": "Kernrelaties", "paragraphs": [], "bullets": ["Bloeddruk wordt beïnvloed door pompfunctie, vullingstoestand, slagvolume, vaatwandelasticiteit en perifere weerstand.", "Cardiac output = hartfrequentie × slagvolume.", "Preload hangt samen met veneuze return en ventriculaire vulling.", "Afterload is de weerstand waartegen het ventrikel moet uitpompen.", "Frank-Starling: meer vulling geeft bij een normaal functionerend hart een krachtiger contractie; minder vulling geeft minder slagvolume."], "note": ""}, {"id": "hemo-2", "type": "causeEffect", "title": "Van veneuze return naar cardiac output", "steps": [{"label": "Veneuze return", "detail": "Bepaalt hoeveel bloed naar het hart terugstroomt."}, {"label": "Preload", "detail": "De ventriculaire vulling vóór contractie verandert mee."}, {"label": "Slagvolume", "detail": "Via Frank-Starling verandert het uitgepompte volume per hartslag."}, {"label": "Cardiac output", "detail": "Bij gelijkblijvende hartfrequentie verandert CO mee met het slagvolume."}]}]}, {"id": "sc1", "kind": "check", "title": "Zelfcheck 1 · Vasodilatatie en bloeddruk", "learningGoal": "Een verandering in arteriële vaattonus vertalen naar SVR, bloeddruk, monitoring en interventiedoel.", "intro": "Redeneer eerst vanuit het aangedane subsysteem.", "stages": [{"id": "sc1-q", "type": "selfCheck", "title": "Voorspel de keten", "question": "Bij een patiënt neemt de arteriële vaattonus af. De pompfunctie blijft op dat moment gelijk. Welke redeneerketen past het best?", "context": "Hint als je twijfelt: begin niet bij de bloeddruk. Vraag eerst welk deel van het cardiovasculaire systeem rechtstreeks verandert.", "options": [{"id": "a", "text": "Vasodilatatie → SVR stijgt → arteriële druk stijgt"}, {"id": "b", "text": "Vasodilatatie → SVR daalt → arteriële druk kan dalen"}, {"id": "c", "text": "Vasodilatatie → preload stijgt → cardiac output stijgt"}, {"id": "d", "text": "Vasodilatatie → prikkelgeleiding vertraagt → bloeddruk daalt"}], "correct": "b", "feedback": "Juist. Vasodilatatie verlaagt de systemische vaatweerstand; daardoor kan de arteriële druk dalen.", "hints": {"a": "Vasodilatatie betekent juist dat de weerstand in het arteriële vaatbed afneemt.", "c": "Preload hoort primair bij veneuze return en ventriculaire vulling, niet bij arteriële vaattonus.", "d": "Prikkelgeleiding is een ander cardiovasculair aandachtspunt; er is hier geen elektrisch probleem beschreven."}, "explanation": [["Primair probleem", "Arteriële distributie."], ["Fysiologische verandering", "SVR daalt."], ["Verwacht gevolg", "Arteriële bloeddruk kan dalen."], ["Monitoring", "Arteriële bloeddruk, drukcurve en pulsaties passen bij dit aandachtspunt."], ["Interventiedoel", "Zo nodig arteriële vaattonus en circulatie ondersteunen, daarna opnieuw beoordelen."]]}]}, {"id": "sc2", "kind": "check", "title": "Zelfcheck 2 · Veneuze return en preload", "learningGoal": "De relatie veneuze return → preload → slagvolume → cardiac output correct ordenen.", "intro": "Volg het bloed van veneuze aanvoer naar output.", "stages": [{"id": "sc2-q", "type": "selfCheck", "title": "Kies de juiste volgorde", "question": "Bij een patiënt neemt de veneuze return af. Hartfrequentie, contractiliteit en afterload blijven voor deze oefening gelijk. Welke volgorde klopt?", "context": "Hint: CO = hartfrequentie × slagvolume.", "options": [{"id": "a", "text": "Veneuze return ↓ → preload ↓ → slagvolume ↓ → cardiac output ↓"}, {"id": "b", "text": "Veneuze return ↓ → cardiac output ↓ → preload ↓ → slagvolume ↓"}, {"id": "c", "text": "Veneuze return ↓ → slagvolume ↑ → preload ↑ → cardiac output ↑"}, {"id": "d", "text": "Veneuze return ↓ → afterload ↑ → prikkelgeleiding ↓ → cardiac output ↓"}], "correct": "a", "feedback": "Juist. Minder veneuze return geeft minder preload, daardoor minder slagvolume en bij gelijkblijvende hartfrequentie een lager cardiac output.", "hints": {"b": "Cardiac output is het resultaat. Bepaal eerst wat de verminderde aanvoer doet met vulling en slagvolume.", "c": "Minder veneuze aanvoer geeft geen grotere ventriculaire vulling.", "d": "Afterload en prikkelgeleiding zijn hier niet de primaire schakels."}, "explanation": [["Redeneerregel", "Hoeveel komt terug → hoeveel vult het ventrikel → hoeveel wordt per slag uitgepompt → wat gebeurt met CO?"]]}]}, {"id": "sc3", "kind": "check", "title": "Zelfcheck 3 · Afterload", "learningGoal": "Het effect van een stijgende afterload op ejectie en slagvolume beredeneren.", "intro": "De vulling en contractiliteit blijven gelijk; alleen de tegendruk verandert.", "stages": [{"id": "sc3-q", "type": "selfCheck", "title": "Voorspel het effect", "question": "De preload en contractiliteit blijven gelijk, maar de afterload neemt duidelijk toe. Wat verwacht je als eerste van de ejectie van het ventrikel?", "context": "Hint: denk aan ‘tegenbelasting’ tijdens het uitpompen.", "options": [{"id": "a", "text": "Het uitpompen wordt gemakkelijker en het slagvolume stijgt"}, {"id": "b", "text": "Het ventrikel moet tegen meer weerstand uitpompen en het slagvolume kan dalen"}, {"id": "c", "text": "De veneuze return neemt automatisch sterk toe"}, {"id": "d", "text": "De elektrische prikkelgeleiding wordt automatisch vertraagd"}], "correct": "b", "feedback": "Juist. Een hogere afterload vergroot de belasting waartegen het ventrikel uitpompt; onder deze voorwaarden kan het slagvolume dalen.", "hints": {"a": "Een hogere afterload betekent juist méér tegendruk tijdens de ejectie.", "c": "Veneuze return bepaalt vooral de preload; een hogere afterload verhoogt die niet automatisch.", "d": "Elektrische geleiding en mechanische ejectie zijn verschillende aandachtspunten."}, "explanation": [["Primair", "Arteriële distributie en de belasting van de pompfunctie."], ["Gevolg", "Ejectie wordt moeilijker; slagvolume en daarmee CO kunnen afnemen."], ["Herbeoordeling", "Volg arteriële druk en relevante tekenen van pompfunctie."]]}]}, {"id": "electrical", "kind": "learn", "title": "Prikkelvorming, geleiding en pompfunctie", "learningGoal": "Elektrische activiteit onderscheiden van mechanische pompfunctie en passende monitoring koppelen.", "intro": "Een ritmeprobleem is niet hetzelfde als een pompprobleem, al kan het ene het andere beïnvloeden.", "stages": [{"id": "elec-1", "type": "info", "title": "Prikkelvorming en -geleiding", "paragraphs": [], "bullets": ["Normale route: sinusknoop → atria → AV-knoop → bundel van His → bundeltakken → Purkinjevezels → ventrikelmyocard.", "De PowerPoint noemt als bewaking: hartfrequentie, pulsaties, ECG/monitor met ritme, PQ, QRS, ST en T, en kalium."], "note": ""}, {"id": "pump-1", "type": "info", "title": "Pompfunctie", "paragraphs": [], "bullets": ["Cardiac output = hartfrequentie × slagvolume.", "De pompfunctie wordt beïnvloed door preload, contractiliteit en afterload.", "Bewakingsmogelijkheden uit de PowerPoint: systolische bloeddruk, arteriële drukcurve, pulsaties, harttonen, cardiac output en tekenen van longstuwing."], "note": ""}]}, {"id": "sc4", "kind": "check", "title": "Zelfcheck 4 · AV-block", "learningGoal": "Een elektrisch geleidingsprobleem herkennen en de juiste monitoring kiezen.", "intro": "Bepaal eerst of het probleem elektrisch, mechanisch, volumegerelateerd of vasculair is.", "stages": [{"id": "sc4-q1", "type": "selfCheck", "title": "Primair probleem", "question": "Op de monitor ontstaat een atrioventriculaire geleidingsstoornis. Welk cardiovasculair aandachtspunt is primair aangedaan?", "context": "", "options": [{"id": "a", "text": "Volume / veneuze return"}, {"id": "b", "text": "Prikkelvorming en -geleiding"}, {"id": "c", "text": "Pompfunctie"}, {"id": "d", "text": "Arteriële distributie"}, {"id": "e", "text": "Microcirculatie"}], "correct": "b", "feedback": "Juist. Een AV-block is primair een probleem van prikkelgeleiding.", "hints": {"a": "Er is geen primair volumeverlies of vullingsprobleem beschreven.", "c": "De mechanische output kan secundair worden beïnvloed, maar het oorspronkelijke probleem is elektrisch.", "d": "Er is geen primaire verandering in arteriële vaattonus beschreven.", "e": "Microcirculatoire gevolgen kunnen secundair optreden bij onvoldoende output, maar zijn niet het startprobleem."}, "explanation": [["Primair", "Prikkelvorming en -geleiding."], ["Secundair", "Effectieve contracties en cardiac output kunnen daarna veranderen."]]}, {"id": "sc4-q2", "type": "selfCheck", "title": "Kies de monitoring", "question": "Welke monitoring sluit het meest direct aan op dit primaire probleem?", "context": "", "options": [{"id": "a", "text": "Alleen diurese"}, {"id": "b", "text": "Alleen huidkleur"}, {"id": "c", "text": "ECG/monitor: frequentie, ritme en geleiding"}, {"id": "d", "text": "Alleen centraal veneuze druk"}], "correct": "c", "feedback": "Juist. ECG/monitoring maakt frequentie, ritme en geleiding zichtbaar.", "hints": {"a": "Diurese geeft informatie over orgaanperfusie, niet rechtstreeks over de elektrische geleidingsroute.", "b": "Huidobservaties zeggen iets over perifere perfusie, maar tonen geen AV-geleidingsstoornis.", "d": "CVD richt zich primair op veneuze vulling, niet op elektrische geleiding."}, "explanation": [["Vervolg", "Beoordeel naast het elektrische patroon ook puls en hemodynamisch effect; herbeoordeel na iedere interventie."]]}]}, {"id": "sc5", "kind": "check", "title": "Zelfcheck 5 · Pompfunctie monitoren", "learningGoal": "Monitoring kiezen die informatie geeft over de mechanische output van het hart.", "intro": "Kies een combinatie die de pomp zelf zo direct mogelijk volgt.", "stages": [{"id": "sc5-q", "type": "selfCheck", "title": "Welke combinatie past?", "question": "Je vermoedt dat het primaire probleem bij een patiënt in de pompfunctie ligt. Welke combinatie geeft het meest rechtstreeks informatie over de mechanische output?", "context": "", "options": [{"id": "a", "text": "ECG + kaliumwaarde, zonder hemodynamische beoordeling"}, {"id": "b", "text": "Systolische RR + pulsaties + arteriële drukcurve/CO"}, {"id": "c", "text": "Alleen CVD en halsvenen"}, {"id": "d", "text": "Alleen capillaire refill en diurese"}], "correct": "b", "feedback": "Juist. Deze parameters geven informatie over de mechanische output en arteriële gevolgen van de pompfunctie.", "hints": {"a": "ECG is belangrijk voor ritme en geleiding, maar een normaal ECG garandeert geen adequate mechanische output.", "c": "CVD en halsvenen geven vooral informatie over het veneuze compartiment en de vulling.", "d": "Capillaire refill en diurese tonen downstream-perfusie en zijn belangrijk, maar beoordelen de pomp indirect."}, "explanation": [["Redeneerregel", "Kies monitoring die past bij de variabele die je werkelijk wilt beoordelen."]]}]}, {"id": "micro", "kind": "learn", "title": "Systemische microcirculatie", "learningGoal": "Tekenen van orgaan- en weefselperfusie herkennen als aanvulling op macrocirculatoire monitoring.", "intro": "Een bloeddrukwaarde alleen vertelt niet alles over wat in de weefsels gebeurt.", "stages": [{"id": "micro-1", "type": "info", "title": "Bewakingsmogelijkheden uit de PowerPoint", "paragraphs": [], "bullets": ["Lactaat, pH en bicarbonaat.", "Brein: gedrag observeren.", "Huid: kleur, turgor, capillaire refill en delta-temperatuur.", "Nier: diurese.", "Daarnaast worden orgaangerichte laboratorium- en observatieparameters genoemd."], "note": "De handleiding vraagt hoe algehele anesthesie de microcirculatie beïnvloedt, maar levert in de aangeleverde bronnen geen expliciet causaal antwoordmodel. Deze les voegt dat mechanisme daarom niet zelfstandig toe."}]}, {"id": "sc6", "kind": "check", "title": "Zelfcheck 6 · Microcirculatie tijdens algehele anesthesie", "learningGoal": "Bij een circulatoire verandering onder algehele anesthesie aanvullende monitoring van weefselperfusie kiezen.", "intro": "De startsituatie geeft de bloeddrukdaling; je hoeft niet te verklaren waardoor de algehele anesthesie die veroorzaakt.", "stages": [{"id": "sc6-q", "type": "selfCheck", "title": "Welke monitoring vult de bloeddruk aan?", "question": "Tijdens algehele anesthesie is de arteriële bloeddruk gedaald. Je wilt ook beoordelen of orgaan- en weefselperfusie bedreigd raken. Welke combinatie past het best?", "context": "Hint: denk niet aan de pomp zelf, maar aan wat uiteindelijk in huid, nier en andere weefsels aankomt.", "options": [{"id": "a", "text": "Alleen het ECG"}, {"id": "b", "text": "Alleen de hartfrequentie"}, {"id": "c", "text": "Capillaire refill/huidobservatie + diurese + relevante metabole parameters zoals lactaat"}, {"id": "d", "text": "Alleen CVD"}], "correct": "c", "feedback": "Juist. Deze combinatie geeft aanvullende informatie over perifere en orgaangerichte perfusie.", "hints": {"a": "Het ECG toont elektrische activiteit van het hart, niet rechtstreeks de weefselperfusie.", "b": "Hartfrequentie is één component van cardiac output, maar zegt niet rechtstreeks hoe goed organen worden doorbloed.", "d": "CVD beschrijft vooral het veneuze compartiment; één veneuze drukwaarde is geen beoordeling van de microcirculatie."}, "explanation": [["Redeneerlijn", "Circulatoire verandering → mogelijke perfusieverandering → microcirculatoire observaties → interventie beoordelen → herbeoordelen."]]}]}, {"id": "medication", "kind": "learn", "title": "Interventies en medicatie: eerst het doel", "learningGoal": "Een interventie koppelen aan het vastgestelde fysiologische probleem.", "intro": "De PowerPoint noemt noodmedicatie en verschillende hemodynamische behandelrichtingen, maar deze les gebruikt ze niet als losse farmacologiequiz.", "stages": [{"id": "med-1", "type": "info", "title": "Wat staat in de bron?", "paragraphs": [], "bullets": ["Noodmedicatie: efedrine, fenylefrine en atropine.", "Algemene cardiovasculaire medicatie: adrenaline, noradrenaline en nitroglycerine.", "Het hemodynamische overzicht noemt als behandelrichtingen onder meer volume, vasopressoren, inotropie en bloedtransfusie."], "note": "In deze les kies je eerst het fysiologische behandeldoel. Doseringen, protocollen en extra farmacologische mechanismen worden niet toegevoegd omdat die niet in de aangeleverde bron zijn uitgewerkt."}]}, {"id": "sc7", "kind": "check", "title": "Zelfcheck 7 · Ernstige dehydratie", "learningGoal": "Primaire oorzaak en secundaire circulatoire gevolgen van ondervulling onderscheiden.", "intro": "Dehydratie is één van de bestaande oefensituaties uit de PowerPoint.", "stages": [{"id": "sc7-q", "type": "selfCheck", "title": "Wat is primair aangedaan?", "question": "Een patiënt is ernstig gedehydreerd. Welk cardiovasculair aandachtspunt is primair aangedaan?", "context": "Hint: wat ontbreekt er als eerste — elektrische activiteit, pompkracht, vaattonus of circulerend volume?", "options": [{"id": "a", "text": "Hartprikkel"}, {"id": "b", "text": "Arteriële distributie"}, {"id": "c", "text": "Volume / veneuze return"}, {"id": "d", "text": "Microcirculatie"}, {"id": "e", "text": "Pompfunctie"}], "correct": "c", "feedback": "Juist. Ernstige dehydratie geeft primair ondervulling met minder veneuze return.", "hints": {"a": "De hartfrequentie kan veranderen als reactie, maar dehydratie veroorzaakt primair geen elektrisch geleidingsprobleem.", "b": "De vaattonus kan compenseren, maar de oorspronkelijke verandering is een tekort aan volume.", "d": "Microcirculatoire achteruitgang kan een gevolg zijn van onvoldoende perfusie; zoek eerst het probleem dat daarvoor ontstaat.", "e": "Het slagvolume kan afnemen zonder primaire schade aan de hartspier; de pomp krijgt minder vulling aangeboden."}, "explanation": [["Keten", "Dehydratie → volume ↓ → veneuze return/preload ↓ → slagvolume kan ↓ → CO/bloeddruk/perfusie kunnen ↓."], ["Interventiedoel", "Onderliggende ondervulling corrigeren en daarna hemodynamiek en perfusie opnieuw beoordelen."]]}]}, {"id": "sc8", "kind": "check", "title": "Zelfcheck 8 · Grote longembolie", "learningGoal": "Herkennen dat één klinische situatie meerdere cardiovasculaire subsystemen kan raken.", "intro": "Niet iedere klinische situatie past volledig in één vakje.", "stages": [{"id": "sc8-q", "type": "selfCheck", "title": "Welke keten past bij het antwoordmodel uit de les?", "question": "Een patiënt ontwikkelt een grote longembolie. Welke redenering sluit het best aan bij het bestaande antwoordmodel?", "context": "Hint: denk eerst aan de weerstand waartegen de rechterventrikel moet uitpompen en daarna aan het aanbod naar links.", "options": [{"id": "a", "text": "Primair alleen hartprikkel → ritme verandert → CO stijgt"}, {"id": "b", "text": "Toegenomen belasting van de rechterventrikel → pompprobleem rechts → minder aanbod naar de linkerharthelft"}, {"id": "c", "text": "Alleen microcirculatie → preload links stijgt"}, {"id": "d", "text": "Alleen systemische vasodilatatie → CO stijgt"}], "correct": "b", "feedback": "Juist. Het antwoordmodel koppelt de grote longembolie aan een pompprobleem rechts door hoge afterload en aan minder veneuze aanvoer naar links.", "hints": {"a": "Een ritmeverandering kan optreden, maar staat niet centraal in het antwoordmodel van deze les.", "c": "Een microcirculatoir probleem kan secundair ontstaan, maar het antwoordmodel start bij de belasting van de rechterpomp.", "d": "De situatie wordt in de les niet primair als systemische vasodilatatie geclassificeerd."}, "explanation": [["Transfer", "Gebruik bij complexe situaties één startmechanisme en voeg daarna secundair aangedane subsystemen toe."]]}]}, {"id": "case-spinal", "kind": "case", "title": "Casus 1 · Hypotensie na locoregionale anesthesie", "learningGoal": "De volledige redeneerlijn doorlopen van locoregionale anesthesie naar arteriële distributie, monitoring, interventiedoel en herbeoordeling.", "intro": "Een ASA I–II-patiënt ondergaat een laagcomplexe ingreep onder locoregionale anesthesie. Na het inzetten van de blokkade daalt de arteriële bloeddruk. Er is geen aanwijzing voor relevant bloedverlies.", "stages": [{"id": "sp-q1", "type": "selfCheck", "title": "1. Primair probleem", "question": "Welk cardiovasculair aandachtspunt is in deze startsituatie het meest rechtstreeks aangedaan?", "context": "Hint: welke categorie uit de les bevat vasodilatatie en SVR?", "options": [{"id": "a", "text": "Volume / veneuze return"}, {"id": "b", "text": "Prikkelvorming/-geleiding"}, {"id": "c", "text": "Pompfunctie"}, {"id": "d", "text": "Arteriële distributie"}, {"id": "e", "text": "Microcirculatie"}], "correct": "d", "feedback": "Juist. De PowerPoint noemt locoregionale anesthesie als situatie waarin vasodilatatie kan optreden; dat valt onder arteriële distributie.", "hints": {"a": "Er is geen bloedverlies of ander primair volumetekort gegeven.", "b": "Er is geen ritme- of geleidingsstoornis beschreven.", "c": "De bloeddrukdaling bewijst niet dat de hartspier primair faalt.", "e": "Microcirculatie kan secundair worden beïnvloed, maar is niet het eerste mechanisme."}, "explanation": []}, {"id": "sp-q2", "type": "selfCheck", "title": "2. Fysiologische verandering", "question": "Welke variabele verandert volgens de in de les gebruikte relatie?", "context": "Hint: meer vaatdiameter betekent meer of minder weerstand?", "options": [{"id": "a", "text": "SVR neemt af"}, {"id": "b", "text": "SVR neemt toe"}, {"id": "c", "text": "Prikkelgeleiding neemt af"}, {"id": "d", "text": "Contractiliteit neemt automatisch sterk toe"}], "correct": "a", "feedback": "Juist. Vasodilatatie verlaagt de systemische vaatweerstand.", "hints": {"b": "Vasodilatatie verlaagt, niet verhoogt, de vaatweerstand.", "c": "De casus geeft geen primair elektrisch probleem.", "d": "De bron koppelt deze situatie aan vaattonus, niet aan een automatische sterke stijging van contractiliteit."}, "explanation": []}, {"id": "sp-q3", "type": "selfCheck", "title": "3. Verwacht klinisch gevolg", "question": "Wat verwacht je vervolgens van de arteriële bloeddruk?", "context": "Hint: gebruik de relatie tussen vaatweerstand en bloeddruk.", "options": [{"id": "a", "text": "De arteriële bloeddruk stijgt"}, {"id": "b", "text": "Vooral de diastolische arteriële druk kan dalen"}, {"id": "c", "text": "De bloeddruk blijft per definitie gelijk"}, {"id": "d", "text": "Alleen de zuurstofsaturatie verandert"}], "correct": "b", "feedback": "Juist. De PowerPoint koppelt SVR-daling aan een daling van de diastolische bloeddruk.", "hints": {"a": "Een lagere arteriële weerstand ondersteunt geen stijging van de druk wanneer andere factoren niet voldoende compenseren.", "c": "Bloeddruk wordt mede bepaald door vaatweerstand; gelijkblijven is dus niet vanzelfsprekend.", "d": "Saturatie en arteriële bloeddruk zijn verschillende parameters."}, "explanation": []}, {"id": "sp-q4", "type": "selfCheck", "title": "4. Monitoring", "question": "Welke monitoring volgt dit probleem het meest rechtstreeks?", "context": "Hint: meet eerst het systeem waarin je het primaire probleem hebt vastgesteld.", "options": [{"id": "a", "text": "Arteriële bloeddruk en waar beschikbaar arteriële drukcurve, aangevuld met pulsaties"}, {"id": "b", "text": "Alleen ECG"}, {"id": "c", "text": "Alleen diurese"}, {"id": "d", "text": "Alleen CVD"}], "correct": "a", "feedback": "Juist. Dit sluit aan op de bewakingsmogelijkheden die de PowerPoint bij arteriële distributie noemt.", "hints": {"b": "ECG volgt ritme en geleiding, niet rechtstreeks de vaatweerstandsgerelateerde bloeddrukverandering.", "c": "Diurese kan perfusie-effecten tonen, maar volgt een acute arteriële drukverandering niet zo direct.", "d": "CVD richt zich primair op veneuze vulling."}, "explanation": []}, {"id": "sp-q5", "type": "interventionChoice", "title": "5. Interventiedoel", "question": "Waar moet de interventie in deze redeneerlijn primair op aangrijpen?", "context": "Hint: de beste interventie grijpt aan op het mechanisme dat je in stap 2 hebt vastgesteld.", "options": [{"id": "a", "text": "De arteriële vaattonus/SVR ondersteunen"}, {"id": "b", "text": "Een ritmestoornis behandelen die niet aanwezig is"}, {"id": "c", "text": "Alleen de saturatie verhogen zonder circulatie te beoordelen"}, {"id": "d", "text": "De monitoring stoppen omdat hypotensie na locoregionale anesthesie kan voorkomen"}], "correct": "a", "feedback": "Juist. Als het primaire probleem vasodilatatie met verlaagde SVR is, moet het behandeldoel dat mechanisme kunnen corrigeren.", "hints": {"b": "Behandel geen niet-aangetoond hartprikkelprobleem.", "c": "De beschreven afwijking is circulatoir; saturatie corrigeert een lage SVR niet.", "d": "Een verklaarbare bloeddrukdaling moet nog steeds worden beoordeeld en gevolgd."}, "explanation": [["Bronbegrenzing", "De PowerPoint noemt vasopressoren en cardiovasculaire noodmedicatie, maar legt hier geen doserings- of behandelprotocol vast."]]}, {"id": "sp-q6", "type": "selfCheck", "title": "6. Verwacht effect en herbeoordeling", "question": "Welke uitkomst past het best bij een effectieve behandeling?", "context": "Hint: controleer of de variabele waarop je wilde ingrijpen daadwerkelijk verbetert.", "options": [{"id": "a", "text": "Arteriële druk herstelt richting uitgangswaarde en klinische perfusie blijft/wordt adequaat"}, {"id": "b", "text": "ECG wordt normaal terwijl de bloeddruk verder daalt"}, {"id": "c", "text": "De CVD moet altijd sterk stijgen"}, {"id": "d", "text": "Alleen de SpO₂ hoeft te verbeteren"}], "correct": "a", "feedback": "Juist. Herbeoordeling controleert of het beoogde hemodynamische effect optreedt en de perfusie adequaat blijft.", "hints": {"b": "Een adequaat ritme garandeert geen adequate circulatie.", "c": "CVD is geen universeel einddoel voor deze situatie.", "d": "SpO₂ alleen beoordeelt het circulatoire probleem onvoldoende."}, "explanation": [["Als herstel uitblijft", "Heropen de redenering en beoordeel ook volume/veneuze return, hartprikkel, pompfunctie en microcirculatie."]]}, {"id": "sp-sum", "type": "summary", "title": "Volledige klinische redenering", "entries": [["Situatie", "Hypotensie na locoregionale anesthesie, zonder relevant bloedverlies."], ["Primair probleem", "Arteriële distributie."], ["Fysiologie", "Vasodilatatie → SVR daalt."], ["Gevolg", "Arteriële/diastolische bloeddruk kan dalen."], ["Monitoring", "Arteriële bloeddruk, drukcurve en pulsaties; perfusie blijven beoordelen."], ["Interventie", "Interventiedoel: arteriële vaattonus/circulatie ondersteunen binnen het anesthesiologisch beleid."], ["Verwacht effect", "Arteriële druk en klinische perfusie verbeteren."], ["Herbeoordeling", "Controleer effect; heroverweeg andere subsystemen als herstel uitblijft."]], "conclusion": "Je hebt nu de volledige redeneerlijn één keer integraal doorlopen."}]}, {"id": "case-bleeding", "kind": "case", "title": "Casus 2 · Fors bloedverlies", "learningGoal": "De volledige redeneerlijn doorlopen van volumeverlies naar veneuze return, cardiac output, monitoring, interventiedoel en herbeoordeling.", "intro": "Tijdens een operatie ontstaat fors bloedverlies. Het hart functioneerde vooraf normaal.", "stages": [{"id": "bl-q1", "type": "selfCheck", "title": "1. Primair probleem", "question": "Welk cardiovasculair aandachtspunt wordt als eerste rechtstreeks aangedaan?", "context": "Hint: wat raakt de patiënt daadwerkelijk kwijt?", "options": [{"id": "a", "text": "Volume / veneuze return"}, {"id": "b", "text": "Prikkelvorming/-geleiding"}, {"id": "c", "text": "Primair pompfalen"}, {"id": "d", "text": "Primair microcirculatie"}, {"id": "e", "text": "Primair arteriële distributie"}], "correct": "a", "feedback": "Juist. Het directe effect van bloedverlies is afname van circulerend volume en daarmee van de veneuze terugstroom.", "hints": {"b": "Hartfrequentie kan reageren, maar het bloedverlies begint niet als elektrisch probleem.", "c": "Slagvolume kan dalen zonder primaire hartspierschade.", "d": "Microcirculatie kan later bedreigd worden, maar dat is downstream.", "e": "Vaattonus kan compenseren, maar is niet het oorspronkelijke probleem."}, "explanation": []}, {"id": "bl-q2", "type": "selfCheck", "title": "2. Fysiologische keten", "question": "Welke keten is correct?", "context": "Hint: volg de keten volume → veneuze return → preload → slagvolume.", "options": [{"id": "a", "text": "Bloedverlies → preload ↑ → SV ↑ → CO ↑"}, {"id": "b", "text": "Bloedverlies → veneuze return ↓ → preload ↓ → SV ↓ → CO kan ↓"}, {"id": "c", "text": "Bloedverlies → SVR ↓ is per definitie de eerste verandering → preload ↑"}, {"id": "d", "text": "Bloedverlies → prikkelgeleiding stopt → CO ↓"}], "correct": "b", "feedback": "Juist. Het antwoordmodel uit de PowerPoint koppelt bloedverlies aan ondervulling en verminderde veneuze terugstroom.", "hints": {"a": "Minder circulerend volume geeft geen grotere ventriculaire vulling.", "c": "Vaattonus kan veranderen als reactie, maar is niet de primaire volumeafname.", "d": "Bloedverlies veroorzaakt niet automatisch een primaire geleidingsstop."}, "explanation": []}, {"id": "bl-q3", "type": "selfCheck", "title": "3. Klinisch gevolg", "question": "Welk hemodynamisch gevolg past het best?", "context": "Hint: CO = hartfrequentie × slagvolume.", "options": [{"id": "a", "text": "Slagvolume en cardiac output kunnen dalen"}, {"id": "b", "text": "Slagvolume moet stijgen"}, {"id": "c", "text": "Alleen het ECG verandert"}, {"id": "d", "text": "Alleen de arteriële vaatweerstand verandert"}], "correct": "a", "feedback": "Juist. Minder preload kan via Frank-Starling het slagvolume verlagen; daarmee kan ook CO dalen.", "hints": {"b": "Minder vulling geeft in deze redenering juist minder slagvolume.", "c": "Het ECG kan normaal blijven terwijl de circulatoire vulling ontoereikend is.", "d": "Vaatweerstand kan reageren, maar verklaart niet het hele gevolg van volumeverlies."}, "explanation": []}, {"id": "bl-q4", "type": "monitoringChoice", "title": "4. Monitoring", "question": "Welke combinatie past het best bij deze redenering?", "context": "Hint: bij een probleem dat meerdere schakels raakt, heb je informatie uit meerdere schakels nodig.", "options": [{"id": "a", "text": "Alleen ECG"}, {"id": "b", "text": "Alleen saturatie"}, {"id": "c", "text": "Veneuze vulling/volume samen met bloeddruk, pulsaties/pompfunctie en tekenen van microcirculatoire perfusie"}, {"id": "d", "text": "Alleen diastolische bloeddruk"}], "correct": "c", "feedback": "Juist. Het probleem begint bij volume maar kan doorwerken naar pompoutput, arteriële druk en microcirculatie.", "hints": {"a": "ECG geeft ritme-informatie maar mist het primaire volumemechanisme en perfusiegevolgen.", "b": "Een saturatie kan normaal zijn ondanks onvoldoende circulerend volume.", "d": "Een bloeddrukwaarde is belangrijk maar beschrijft niet zelfstandig volume, cardiac output en weefselperfusie."}, "explanation": [["Monitoring uit de bron", "Veneus: CVD/curve, halsvenen, oedeem, in-/output en leg raising. Pomp: systolische RR, pulsaties, drukcurve en CO. Microcirculatie: huid, capillaire refill, diurese en metabole parameters."]]}, {"id": "bl-q5", "type": "interventionChoice", "title": "5. Interventiedoel", "question": "Welke interventierichting sluit rechtstreeks aan op het primaire probleem?", "context": "Hint: behandel eerst de variabele die in stap 1 rechtstreeks is veranderd.", "options": [{"id": "a", "text": "Het circulerend volume en daarmee de veneuze return/preload ondersteunen"}, {"id": "b", "text": "Alleen de vaatweerstand verhogen en het volumetekort negeren"}, {"id": "c", "text": "Alleen de hartfrequentie verhogen"}, {"id": "d", "text": "Alleen de SpO₂ verhogen"}], "correct": "a", "feedback": "Juist. De PowerPoint beschrijft dat preload door volumetherapie kan worden beïnvloed; dat sluit aan op het primaire probleem ondervulling.", "hints": {"b": "Verhoging van vaatweerstand corrigeert niet het onderliggende verlies aan circulerend volume.", "c": "Een hogere hartfrequentie vult de circulatie niet aan.", "d": "Zuurstofsaturatie corrigeert de verminderde veneuze return niet."}, "explanation": [["Bronbegrenzing", "De PowerPoint noemt volume, vasopressoren, inotropie en bloedtransfusie als behandelrichtingen maar geeft hier geen drempels of protocollen."]]}, {"id": "bl-q6", "type": "selfCheck", "title": "6. Effect en herbeoordeling", "question": "Welke keten wil je na een effectieve volumegerichte interventie zien?", "context": "Hint: veranderde de interventie daadwerkelijk het oorspronkelijke probleem?", "options": [{"id": "a", "text": "Veneuze return ↑ → preload ↑ → slagvolume/CO kunnen verbeteren → bloeddruk/perfusie verbeteren"}, {"id": "b", "text": "Preload ↓ → slagvolume ↓ → bloeddruk stijgt"}, {"id": "c", "text": "ECG normaliseert → volume is automatisch hersteld"}, {"id": "d", "text": "Alleen SVR stijgt → probleem opgelost"}], "correct": "a", "feedback": "Juist. De herbeoordeling moet laten zien dat het oorspronkelijke volumeprobleem en de gevolgen daarvan verbeteren.", "hints": {"b": "Deze richting is fysiologisch tegengesteld aan het behandeldoel.", "c": "Elektrische activiteit zegt niet of het verloren volume is hersteld.", "d": "Vaatweerstand is één determinant; het primaire volumetekort kan dan nog bestaan."}, "explanation": [["Als herstel uitblijft", "Beoordeel opnieuw pompfunctie, arteriële distributie en microcirculatie."]]}, {"id": "bl-sum", "type": "summary", "title": "Volledige klinische redenering", "entries": [["Situatie", "Fors bloedverlies tijdens de operatie."], ["Primair probleem", "Volume / veneuze return."], ["Fysiologie", "Circulerend volume ↓ → veneuze return/preload ↓."], ["Gevolg", "Slagvolume en cardiac output kunnen dalen; bloeddruk en perfusie kunnen verslechteren."], ["Monitoring", "Vulling + pompfunctie + arteriële druk + microcirculatoire tekenen."], ["Interventie", "Interventiedoel: circulerend volume/veneuze return ondersteunen binnen het anesthesiologisch beleid."], ["Verwacht effect", "Preload, slagvolume/CO en perfusie kunnen verbeteren."], ["Herbeoordeling", "Controleer de hele keten opnieuw en heroverweeg andere subsystemen als herstel uitblijft."]], "conclusion": "Je hebt nu de volledige redeneerlijn voor de tweede keer integraal doorlopen."}]}, {"id": "final-check", "kind": "review", "title": "Eindzelfcheck · transfer", "learningGoal": "De vijf aandachtspunten en redeneerstappen toepassen in nieuwe korte situaties.", "intro": "Drie verschillende situaties. De vraag wisselt bewust: soms zoek je het primaire systeem, soms een vervolg in de redenering.", "stages": [{"id": "fin-q1", "type": "selfCheck", "title": "Anafylaxie", "question": "Welk cardiovasculair aandachtspunt staat in het bestaande antwoordmodel vooraan bij anafylaxie?", "context": "Hint: zoek naar de categorie waarin vasodilatatie thuishoort.", "options": [{"id": "a", "text": "Prikkelgeleiding"}, {"id": "b", "text": "Pompfunctie"}, {"id": "c", "text": "Arteriële distributie / vaatverwijding"}, {"id": "d", "text": "Alleen veneuze return"}], "correct": "c", "feedback": "Juist. Het antwoordmodel classificeert anafylaxie primair bij vaatverwijding/arteriële distributie.", "hints": {"a": "Het antwoordmodel classificeert anafylaxie niet primair als geleidingsprobleem.", "b": "Pompfunctie kan secundair veranderen, maar is niet de eerste classificatie in de les.", "d": "Veneuze vulling kan veranderen, maar het antwoordmodel benoemt eerst vaatverwijding."}, "explanation": []}, {"id": "fin-q2", "type": "selfCheck", "title": "Overvulling bij nierfalen", "question": "Welk cardiovasculair aandachtspunt wordt in het bestaande antwoordmodel primair genoemd?", "context": "Hint: wat gebeurt met het veneuze aanbod wanneer het circulerend volume toeneemt?", "options": [{"id": "a", "text": "Extra veneuze terugstroom"}, {"id": "b", "text": "AV-geleiding"}, {"id": "c", "text": "Arteriële obstructie"}, {"id": "d", "text": "Microcirculatoire eiwitlekkage"}], "correct": "a", "feedback": "Juist. Het antwoordmodel noemt extra veneuze terugstroom.", "hints": {"b": "Er is geen primair elektrisch probleem beschreven.", "c": "Het antwoordmodel noemt geen arteriële obstructie.", "d": "Bij overvulling staat in het antwoordmodel extra veneuze return centraal."}, "explanation": [["Transfer", "Voorspel vervolgens wat extra veneuze return met preload doet."]]}, {"id": "fin-q3", "type": "selfCheck", "title": "Sepsis / septische shock", "question": "Waarom is één categorie in het bestaande antwoordmodel hier onvoldoende?", "context": "Hint: onderscheid primair probleem van secundaire gevolgen.", "options": [{"id": "a", "text": "Omdat cardiovasculaire problemen nooit te classificeren zijn"}, {"id": "b", "text": "Omdat verschillende schakels van de circulatie tegelijk of na elkaar kunnen veranderen"}, {"id": "c", "text": "Omdat alleen het ECG telt"}, {"id": "d", "text": "Omdat bloeddruk geen rol speelt"}], "correct": "b", "feedback": "Juist. Het antwoordmodel koppelt deze complexe situatie aan arteriële distributie, microcirculatoire eiwitlekkage en ondervulling.", "hints": {"a": "De vijf categorieën blijven juist behulpzaam; soms worden meerdere geraakt.", "c": "ECG beschrijft maar één deel van het cardiovasculaire systeem.", "d": "Arteriële distributie is juist nauw aan bloeddruk gekoppeld."}, "explanation": [["Redeneerstrategie", "Kies één startmechanisme en voeg daarna secundair aangedane subsystemen toe."]]}]}, {"id": "close", "kind": "review", "title": "Afronding · van C naar zuurstofbalans", "learningGoal": "De cardiovasculaire redeneerlijn samenvatten en de transfer naar bijeenkomst 5 herkennen.", "intro": "Bijeenkomst 5 gaat verder met de zuurstofbalans van het myocard en bloed.", "stages": [{"id": "close-s", "type": "summary", "title": "Wat je nu moet kunnen", "entries": [["1", "Een situatie terugbrengen tot één primair cardiovasculair aandachtspunt."], ["2", "De relevante fysiologische verandering benoemen."], ["3", "Het verwachte effect op bloeddruk, slagvolume, cardiac output of perfusie beredeneren."], ["4", "Monitoring kiezen die informatie geeft over het vermoedelijke probleem."], ["5", "Een interventiedoel koppelen aan het mechanisme."], ["6", "Na de interventie dezelfde keten opnieuw beoordelen."], ["Transfer", "Deze circulatoire variabelen vormen de basis voor de volgende bijeenkomst over zuurstofaanbod en -behoefte."]], "conclusion": "Klinisch redeneren is geen losse lijst met waarden: je koppelt situatie, fysiologie, monitoring, interventie en herbeoordeling."}]}]}
 </script>
 <script>
 'use strict';
 (()=>{
-const $=id=>document.getElementById(id),root=$('stage');
-const questionTypes=new Set(['predictFirst','primaryProblem','monitoringChoice','interventionChoice']);
+const $=id=>document.getElementById(id);
+const root=$('stage');
 const course=JSON.parse($('course-content').textContent);
+const labels={learn:'Uitleg',check:'Zelfchecks',case:'Casussen',review:'Afronding'};
+const questionTypes=new Set(['selfCheck','predictFirst','primaryProblem','monitoringChoice','interventionChoice']);
+
 function validate(c){
- const ids=new Set();const unique=id=>{if(typeof id!=='string'||!id||ids.has(id))throw Error('Ontbrekende of dubbele id: '+id);ids.add(id);};
- if(c.schemaVersion!=='1.0'||!Array.isArray(c.activities)||!c.activities.length)throw Error('Ongeldige cursusstructuur.');
- c.activities.forEach(a=>{unique(a.id);if(!['exercise','case'].includes(a.kind)||!a.title||!a.learningGoal||!a.stages?.length)throw Error('Onvolledige activiteit: '+a.id);
- a.stages.forEach((s,index)=>{unique(s.id);if(!s.title)throw Error('Ontbrekende titel: '+s.id);
- if(questionTypes.has(s.type)){
- if(!s.question||!Array.isArray(s.options)||s.options.length<2||!s.feedback)throw Error('Onvolledige vraag: '+s.id);
- const keys=s.options.map(o=>o.id);if(new Set(keys).size!==keys.length||!keys.includes(s.correct)||s.options.some(o=>!o.text))throw Error('Ongeldige antwoordopties: '+s.id);
- s.options.filter(o=>o.id!==s.correct).forEach(o=>{if(!s.hint&&!s.hints?.[o.id])throw Error('Ontbrekende hint: '+s.id+'/'+o.id);});
- if(!Array.isArray(s.explanation))throw Error('Ontbrekende uitleg: '+s.id);
- if(!s.explanation.length&&a.stages[index+1]?.type!=='causeEffect')throw Error('Vraag zonder vervolgmechanisme: '+s.id);
- }else if(s.type==='causeEffect'){if(!s.steps?.length||s.steps.some(t=>!t.label||!t.detail))throw Error('Ongeldige keten: '+s.id);
- }else if(s.type==='summary'){if(!s.heading||!s.entries?.length||!s.conclusion)throw Error('Onvolledig overzicht: '+s.id);
- }else throw Error('Onbekend component: '+s.type);});});
+  if(!c || c.schemaVersion!=='2.0' || !Array.isArray(c.activities) || !c.activities.length) throw Error('Ongeldige cursusstructuur.');
+  const ids=new Set();
+  const unique=id=>{if(!id||ids.has(id))throw Error('Ontbrekende of dubbele id: '+id);ids.add(id);};
+  c.activities.forEach(a=>{
+    unique(a.id);
+    if(!['learn','check','case','review'].includes(a.kind)) throw Error('Onbekende categorie: '+a.id);
+    if(!a.title||!a.learningGoal||!Array.isArray(a.stages)||!a.stages.length) throw Error('Onvolledig lesonderdeel: '+a.id);
+    a.stages.forEach((s,i)=>{
+      unique(s.id);
+      if(questionTypes.has(s.type)){
+        if(!s.question||!Array.isArray(s.options)||s.options.length<2) throw Error('Ongeldige vraag: '+s.id);
+        const optionIds=s.options.map(o=>o.id);
+        if(new Set(optionIds).size!==optionIds.length || !optionIds.includes(s.correct)) throw Error('Ongeldig antwoordmodel: '+s.id);
+        s.options.filter(o=>o.id!==s.correct).forEach(o=>{if(!s.hints?.[o.id])throw Error('Ontbrekende foutfeedback: '+s.id+'/'+o.id);});
+      } else if(s.type==='causeEffect'){
+        if(!Array.isArray(s.steps)||s.steps.length<2) throw Error('Ongeldige oorzaak-gevolgketen: '+s.id);
+      } else if(s.type==='info'){
+        if(!(s.paragraphs?.length||s.bullets?.length||s.note)) throw Error('Leeg uitlegonderdeel: '+s.id);
+      } else if(s.type==='summary'){
+        if(!Array.isArray(s.entries)||!s.entries.length||!s.conclusion) throw Error('Ongeldig overzicht: '+s.id);
+      } else throw Error('Onbekend componenttype: '+s.type);
+    });
+  });
 }
-try{validate(course);}catch(e){root.setAttribute('role','alert');root.textContent='De lesinhoud kan niet worden geladen: '+e.message;return;}
-const blank=()=>({selected:null,status:'unanswered',revealed:false,step:0});
+
+try{validate(course);}catch(e){root.setAttribute('role','alert');root.textContent='De les kan niet worden geladen: '+e.message;return;}
+
+const blank=s=>({selected:null,status:'unanswered',revealed:false,step:0,visited:s.type==='info'||s.type==='summary'});
 const state=new Map(course.activities.map(a=>[a.id,{index:0,stages:a.stages.map(blank)}]));
 let selected=course.activities[0].id;
-const activity=()=>course.activities.find(a=>a.id===selected),activityState=()=>state.get(selected);
+const activity=()=>course.activities.find(a=>a.id===selected);
+const activityState=()=>state.get(selected);
+const model=()=>{const a=activity(),v=activityState(),s=a.stages[v.index],st=v.stages[v.index];return{a,v,s,st};};
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
-function button(text,fn,cls){const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b;}
-function announce(text){$('announcer').textContent=text;}
-function focusStart(){const first=root.querySelector('input:not(:disabled),button:not(:disabled)');if(first)first.focus();else $('activity-heading').focus();}
-function model(){const a=activity(),v=activityState();return {a,v,s:a.stages[v.index],st:v.stages[v.index]};}
-function complete(s,st){return s.type==='summary'||(s.type==='causeEffect'?st.step===s.steps.length-1:st.revealed);}
-function selectActivity(id,focus=true){selected=id;render();if(focus)$('activity-heading').focus();announce(activity().title);}
-function go(index){activityState().index=index;render();focusStart();announce(model().s.title);}
+const button=(text,fn,cls)=>{const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b;};
+function announce(t){$('announcer').textContent=t;}
+function focusStart(){const n=root.querySelector('input:not(:disabled),button:not(:disabled),summary');(n||$('activity-heading')).focus();}
+function complete(s,st){if(s.type==='info'||s.type==='summary')return true;if(s.type==='causeEffect')return st.step===s.steps.length-1;return st.revealed&&st.status==='correct';}
+
 function renderMenu(){
- const current=activity();const nav=$('activity-list');nav.replaceChildren();nav.append(el('div',current.kind==='exercise'?'Zes kernconcepten':'Twee klinische casussen','sidebar-label'));
- course.activities.filter(a=>a.kind===current.kind).forEach((a,i)=>{const b=button('',()=>selectActivity(a.id),'activity-button');b.dataset.activity=a.id;b.setAttribute('aria-current',String(a.id===selected));b.append(el('span',String(i+1).padStart(2,'0'),'activity-number'),el('span',a.title,'activity-title'));nav.append(b);});
- document.querySelectorAll('[data-kind]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.kind===current.kind));const count=course.activities.filter(a=>a.kind===b.dataset.kind).length;b.textContent=(b.dataset.kind==='exercise'?'Voorspeloefeningen':'Casussen')+' · '+count;});
- nav.setAttribute('aria-label',current.kind==='exercise'?'Kies een voorspeloefening':'Kies een casus');
+ const a=activity(), nav=$('activity-list'); nav.replaceChildren();
+ nav.append(el('div',labels[a.kind],'sidebar-label'));
+ course.activities.filter(x=>x.kind===a.kind).forEach((x,i)=>{
+   const b=button('',()=>selectActivity(x.id),'activity-button');
+   b.setAttribute('aria-current',String(x.id===selected));
+   b.append(el('span',String(i+1).padStart(2,'0'),'n'),el('span',x.title));
+   nav.append(b);
+ });
+ document.querySelectorAll('[data-kind]').forEach(b=>{
+   const kind=b.dataset.kind,count=course.activities.filter(x=>x.kind===kind).length;
+   b.setAttribute('aria-pressed',String(kind===a.kind));
+   b.textContent=labels[kind]+' · '+count;
+ });
 }
-function definitions(entries){const dl=el('dl',undefined,'definitions');entries.forEach(([title,text])=>dl.append(el('dt',title),el('dd',text)));return dl;}
-function navigation(){
- const {a,v,s,st}=model(),last=v.index===a.stages.length-1,finished=last&&complete(s,st);
- $('previous').disabled=v.index===0;$('forward').hidden=last;$('forward').disabled=!complete(s,st);$('restart').hidden=!finished;
- const next=course.activities[course.activities.findIndex(x=>x.id===selected)+1];$('next-activity').hidden=!finished||!next;
- $('next-activity').textContent=next?.kind!==a.kind?'Naar de casussen':(a.kind==='exercise'?'Volgende oefening':'Volgende casus');
- $('restart').textContent=a.kind==='exercise'?'Oefening opnieuw':'Casus opnieuw doorlopen';
- $('navigation-note').textContent=finished?'Onderdeel afgerond. Je kunt terugkijken of verder oefenen.':(!complete(s,st)?(s.type==='causeEffect'?'Doorloop de keten om verder te gaan.':'Maak een keuze en bekijk de uitleg om verder te gaan.'):'');
+
+function selectActivity(id,focus=true){selected=id;render();if(focus)$('activity-heading').focus();announce(activity().title);}
+function go(i){activityState().index=i;render();focusStart();announce(model().s.title);}
+
+function defs(entries){const dl=el('dl');entries.forEach(([a,b])=>dl.append(el('dt',a),el('dd',b)));return dl;}
+
+function renderInfo(s){
+ const d=el('div',undefined,'info'); d.append(el('h3',s.title));
+ (s.paragraphs||[]).forEach(p=>d.append(el('p',p)));
+ if(s.bullets?.length){const ul=el('ul');s.bullets.forEach(x=>ul.append(el('li',x)));d.append(ul);}
+ if(s.note) d.append(el('p',s.note,'note'));
+ root.append(d);
 }
+
 function renderQuestion(s,st){
- const fieldset=el('fieldset');fieldset.append(el('legend',s.question));if(s.context){const p=el('p',s.context,'small');p.id=s.id+'-context';fieldset.setAttribute('aria-describedby',p.id);fieldset.append(p);}
- const options=el('div',undefined,'options');s.options.forEach(o=>{const label=el('label',undefined,'option'),input=el('input');input.type='radio';input.name=s.id;input.value=o.id;input.checked=st.selected===o.id;input.disabled=st.status!=='unanswered';input.addEventListener('change',()=>st.selected=o.id);label.append(input,el('span',o.text));options.append(label);});fieldset.append(options);root.append(fieldset);
- const feedback=el('div');feedback.setAttribute('aria-live','polite');feedback.setAttribute('aria-atomic','true');
+ const fs=el('fieldset');fs.append(el('legend',s.question));
+ if(s.context){const p=el('p',s.context,'small');p.id=s.id+'-ctx';fs.setAttribute('aria-describedby',p.id);fs.append(p);}
+ const ops=el('div',undefined,'options');
+ s.options.forEach(o=>{
+   const lab=el('label',undefined,'option'),inp=el('input');inp.type='radio';inp.name=s.id;inp.value=o.id;inp.checked=st.selected===o.id;inp.disabled=st.status!=='unanswered';inp.addEventListener('change',()=>st.selected=o.id);
+   lab.append(inp,el('span',o.text));ops.append(lab);
+ });
+ fs.append(ops);root.append(fs);
  if(st.status==='unanswered'){
- const check=button(s.type==='predictFirst'?'Controleer mijn voorspelling':'Controleer mijn keuze',()=>{if(!st.selected){feedback.replaceChildren(el('p','Kies eerst één antwoord.'));feedback.setAttribute('role','alert');return;}st.status=st.selected===s.correct?'correct':'incorrect';render();root.querySelector(st.status==='incorrect'?'[data-retry]':'[data-explain]').focus();},'primary');check.dataset.check='';root.append(check,feedback);return;
+   const area=el('div',undefined,'actions');
+   area.append(button('Controleer mijn keuze',()=>{
+     if(!st.selected){announce('Kies eerst een antwoord.');return;}
+     st.status=st.selected===s.correct?'correct':'incorrect';render();
+   },'primary'));
+   root.append(area);return;
  }
- feedback.className='feedback'+(st.status==='correct'?' correct':'');feedback.append(el('h3',st.status==='correct'?'✓ Juist':'Nog niet juist'),el('p',st.status==='correct'?s.feedback:(s.hints?.[st.selected]||s.hint)));root.append(feedback);
- const controls=el('div',undefined,'actions');
+ const fb=el('div',undefined,'feedback'+(st.status==='correct'?' correct':''));
+ fb.append(el('h3',st.status==='correct'?'✓ Juist':'Nog niet juist'),
+           el('p',st.status==='correct'?s.feedback:s.hints[st.selected]));
+ root.append(fb);
+ const area=el('div',undefined,'actions');
  if(st.status==='incorrect'){
- const retry=button(st.revealed?'Opnieuw kiezen':'Probeer opnieuw',()=>{st.status='unanswered';st.selected=null;st.revealed=false;render();focusStart();});retry.dataset.retry='';controls.append(retry);
+   area.append(button('Probeer opnieuw',()=>{st.selected=null;st.status='unanswered';st.revealed=false;render();focusStart();}));
+ } else {
+   const show=button(st.revealed?'Uitleg verbergen':'Bekijk de redenering',()=>{st.revealed=!st.revealed;render();},'primary');
+   show.setAttribute('aria-expanded',String(st.revealed));area.append(show);
  }
- const explain=button(st.status==='correct'?'Bekijk waarom':'Toon uitleg',()=>{st.revealed=true;if(!s.explanation.length){go(activityState().index+1);return;}render();root.querySelector('[data-explain]').focus();announce('De uitleg staat onder de knop.');},'primary');
- explain.dataset.explain='';explain.setAttribute('aria-expanded',String(st.revealed));explain.setAttribute('aria-controls',s.id+'-explanation');controls.append(explain);root.append(controls);
- const section=el('section',undefined,'explanation');section.id=s.id+'-explanation';section.hidden=!st.revealed;
- if(st.revealed){section.append(definitions(s.explanation));if(!s.explanation.length)section.append(el('p','De uitleg staat in het volgende onderdeel: het mechanisme.'));}root.append(section);
+ root.append(area);
+ if(st.status==='correct'&&st.revealed&&s.explanation?.length){
+   const sec=el('section',undefined,'explanation');sec.append(defs(s.explanation));root.append(sec);
+ }
 }
+
 function renderChain(s,st){
- root.append(el('h3','Het mechanisme'),el('p',`Stap ${st.step+1} van ${s.steps.length}`,'small'));
- const chain=el('ol',undefined,'chain');s.steps.slice(0,st.step+1).forEach((t,i)=>{const li=el('li',undefined,'chain-step');if(i===st.step)li.setAttribute('aria-current','step');const n=el('span',String(i+1),'chain-number');n.setAttribute('aria-hidden','true');const detail=el('div');detail.append(el('p',t.label,'chain-label'));if(i===st.step)detail.append(el('p',t.detail,'chain-detail'));li.append(n,detail);chain.append(li);});root.append(chain);
- const controls=el('div',undefined,'actions');const back=button('Vorige stap',()=>{st.step--;render();root.querySelector('[data-chain-next]')?.focus();announce(s.steps[st.step].label);});back.disabled=st.step===0;controls.append(back);
- if(st.step<s.steps.length-1){const next=button('Volgende stap',()=>{st.step++;render();const target=root.querySelector('[data-chain-next]')||($('forward').hidden?$('restart'):$('forward'));target.focus();announce(s.steps[st.step].label);},'primary');next.dataset.chainNext='';controls.append(next);}
- else{controls.append(button('Keten opnieuw bekijken',()=>{st.step=0;render();root.querySelector('[data-chain-next]')?.focus();}));}
- // Wrong predictions remain retryable even after opening their mechanism.
- const {a,v}=model(),before=a.stages[v.index-1],beforeState=v.stages[v.index-1];
- if(before&&questionTypes.has(before.type)&&beforeState.status==='incorrect'){
- const retry=button('Opnieuw voorspellen',()=>{Object.assign(beforeState,blank());st.step=0;go(v.index-1);});retry.dataset.predictionRetry='';controls.append(retry);
- }
- root.append(controls);
+ root.append(el('h3',s.title),el('p',`Stap ${st.step+1} van ${s.steps.length}`,'small'));
+ const ol=el('ol',undefined,'chain');
+ s.steps.slice(0,st.step+1).forEach((x,i)=>{
+   const li=el('li',undefined,'chain-step');if(i===st.step)li.setAttribute('aria-current','step');
+   const num=el('span',String(i+1),'chain-number'),box=el('div');box.append(el('p',x.label,'chain-label'));if(i===st.step)box.append(el('p',x.detail,'chain-detail'));li.append(num,box);ol.append(li);
+ });
+ root.append(ol);
+ const a=el('div',undefined,'actions');
+ const back=button('Vorige stap',()=>{st.step--;render();});back.disabled=st.step===0;a.append(back);
+ if(st.step<s.steps.length-1)a.append(button('Volgende stap',()=>{st.step++;render();},'primary'));
+ else a.append(button('Keten opnieuw',()=>{st.step=0;render();}));
+ root.append(a);
 }
+
+function renderSummary(s){root.append(el('h3',s.title),defs(s.entries),el('p',s.conclusion));}
+
+function navigation(){
+ const {a,v,s,st}=model(),last=v.index===a.stages.length-1,done=complete(s,st),finished=last&&done;
+ $('previous').disabled=v.index===0;
+ $('forward').hidden=last;$('forward').disabled=!done;
+ $('restart').hidden=!finished;
+ const idx=course.activities.findIndex(x=>x.id===selected),next=course.activities[idx+1];
+ $('next-activity').hidden=!finished||!next;
+ $('next-activity').textContent=next?'Volgende: '+next.title:'';
+ $('navigation-note').textContent=!done?(s.type==='causeEffect'?'Doorloop de keten om verder te gaan.':'Geef eerst een correct antwoord en bekijk zo nodig de redenering.'):(finished?'Onderdeel afgerond.':'');
+}
+
 function render(){
- const {a,v,s,st}=model();renderMenu();$('activity-heading').textContent=a.title;$('activity-intro').textContent=a.intro||'';$('activity-context').textContent=a.context||'';$('activity-context').hidden=!a.context;$('learning-goal').textContent=a.learningGoal;
- $('position').textContent=`Onderdeel ${v.index+1} van ${a.stages.length}`;$('stage-name').textContent=s.title;root.replaceChildren();
- if(questionTypes.has(s.type))renderQuestion(s,st);else if(s.type==='causeEffect')renderChain(s,st);else{root.append(el('h3',s.heading),definitions(s.entries),el('p',s.conclusion));}
+ const {a,v,s,st}=model();renderMenu();
+ $('activity-heading').textContent=a.title;$('activity-intro').textContent=a.intro||'';$('learning-goal').textContent=a.learningGoal;
+ $('position').textContent=`Onderdeel ${v.index+1} van ${a.stages.length}`;$('stage-name').textContent=s.title;
+ root.replaceChildren();
+ if(questionTypes.has(s.type))renderQuestion(s,st);
+ else if(s.type==='causeEffect')renderChain(s,st);
+ else if(s.type==='info')renderInfo(s);
+ else renderSummary(s);
  navigation();
 }
-$('course-title').textContent=course.title;$('course-subtitle').textContent=course.subtitle;document.title=course.title+' · Klinisch redeneren';
-course.sources.forEach(s=>{const li=el('li'),link=el('a',s.title);link.href=s.url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);$('sources').append(li);});
-document.querySelectorAll('[data-kind]').forEach(b=>b.addEventListener('click',()=>{const current=activity();if(current.kind!==b.dataset.kind){const target=course.activities.find(a=>a.kind===b.dataset.kind);if(target)selectActivity(target.id);}}));
+
+$('course-title').textContent=course.title;$('course-subtitle').textContent=course.subtitle;$('source-note').textContent=course.sourceNote;
+document.querySelectorAll('[data-kind]').forEach(b=>b.addEventListener('click',()=>{const target=course.activities.find(a=>a.kind===b.dataset.kind);if(target)selectActivity(target.id);}));
 $('previous').addEventListener('click',()=>{const v=activityState();if(v.index>0)go(v.index-1);});
 $('forward').addEventListener('click',()=>{const {a,v,s,st}=model();if(complete(s,st)&&v.index<a.stages.length-1)go(v.index+1);});
-$('restart').addEventListener('click',()=>{const a=activity();state.set(a.id,{index:0,stages:a.stages.map(blank)});render();focusStart();announce('Opnieuw begonnen.');});
-$('next-activity').addEventListener('click',()=>{const n=course.activities[course.activities.findIndex(a=>a.id===selected)+1];if(n)selectActivity(n.id);});
+$('restart').addEventListener('click',()=>{const a=activity();state.set(a.id,{index:0,stages:a.stages.map(blank)});render();focusStart();});
+$('next-activity').addEventListener('click',()=>{const i=course.activities.findIndex(a=>a.id===selected),n=course.activities[i+1];if(n)selectActivity(n.id);});
 render();
 })();
 </script>
-</body></html>
+</body>
+</html>
